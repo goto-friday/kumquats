@@ -88,6 +88,7 @@ for i, comb in enumerate(d):
     ax.invert_yaxis()
     ax.scatter(phases, indices, c=colors)
     fig.savefig(f"img/color/{comb}.png")
+# TODO make a single plot, see also todo.cgi?f=tommy
 #for p in d[next(iter(d))]:
 #    print(p)
 #fig.savefig("/tmp/a.png")

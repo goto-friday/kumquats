@@ -1,0 +1,5 @@
+#FILTS := B V SG SI SR
+: dat/custom.json |> python3 src/query.py |> dat/known.json
+: dat/known.json dat/stars.json |> python3 src/calib_mag.py |> dat/B.csv dat/V.csv dat/SG.csv dat/SI.csv dat/SR.csv
+: dat/[BV].csv dat/S[GIR].csv dat/custom.json dat/known.json |> python3 src/color_index.py |> img/color/B-SG.png img/color/B-SI.png img/color/B-SR.png img/color/B-V.png img/color/SG-SI.png img/color/SG-SR.png img/color/SI-SR.png img/color/V-SG.png img/color/V-SI.png img/color/V-SR.png
+: dat/[BV].csv dat/S[GIR].csv |> python3 src/color.py |> img/color/plot.png img/color/animation.gif

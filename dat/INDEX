@@ -1,0 +1,3 @@
+stars.json: photometry data from the AAVSOnet images. generated from Kalee's colab (TODO link).
+$FILTER.csv: calibrated mag and phase for each filter, calculated from stars.json.
+comp_mags.csv: magnitudes of comp stars, from (TODO link)

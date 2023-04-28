@@ -1,0 +1,6 @@
+{
+	"target": "V765 Cas",
+	"filters": ["B", "V", "SG", "SI", "SR"],
+	"comp1": "comp98",
+	"comp2": "comp117"
+}
