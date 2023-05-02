@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
 
+# TODO might be binning points twice; only needed once.
+
 import os
 import csv
 import json
 import math as m
 import subprocess as sp
 
+import matplotlib as mpl
 import matplotlib.pyplot as plt
+
+mpl.rcParams.update({'font.size': 14})
 
 def readin(filt, mag_comp):
     ret = dict(filter=filt, phase=[], mag=[])
@@ -43,7 +48,6 @@ for i in range(len(dat[0]['phase'])):
     pt = {filt: mag}
 
     for d in dat[1:]:
-        # TODO maybe inline this
         mag = avg_near(phase, 'mag', d)
         if mag == 0:
             break
@@ -51,44 +55,57 @@ for i in range(len(dat[0]['phase'])):
     else:
         pts[phase] = pt
 
+def mean(x):
+    return sum(x)/len(x)
+
+i = 0
+pts2 = {}
+while i < 1:
+    close_pts = list(filter(lambda p: abs(p-i) < 0.05, pts))
+    if len(close_pts) > 0:
+        pts2[i] = {}
+        for filt in pts[next(iter(pts))]:
+            pts2[i][filt] = mean([pts[p][filt] for p in close_pts])
+        #pts2[i] = [pts[p] for p in close_pts]
+    i += 0.05
+
 # Calculate the color index for each pair of filters (A, B) as
 # A_mag - B_mag and plot it.
 
-d = {}
-for i in range(len(c['filters'])-1):
+d={'B-V': []}
+for p in pts2:
+    d['B-V'].append((p, pts2[p]['B'] - pts2[p]['V']))
+
+for i in range(len(c['filters'])-2):
     f1 = c['filters'][i]
-    for j in range(i+1, len(c['filters'])):
+    for j in range(i+2, len(c['filters'])):
         f2 = c['filters'][j]
         name = f1 + '-' + f2
         if name not in d:
             d[name] = []
-        for p in pts:
-            d[name].append((p, abs(pts[p][f1] - pts[p][f2])))
+        for p in pts2:
+            d[name].append((p, pts2[p][f1] - pts2[p][f2]))
+
 #fig, axes = plt.subplots(1, len(d))
 #for ax in axes:
 #    ax.invert_yaxis()
 #fig, ax = plt.subplots()
-max_index = 0
-for comb in d:
-    indices = list(map(lambda e: e[1], d[comb]))
-    max_index = max(indices+[max_index])
+
 os.makedirs("img/color", exist_ok=True)
+max_index = max([max([x[1] for x in d[c]]) for c in d])
+min_index = min([min([x[1] for x in d[c]]) for c in d])
+fig, ax = plt.subplots()
+ax.set_xlabel("Phase")
+ax.set_ylabel("Color Index")
+
 for i, comb in enumerate(d):
     d[comb].sort()
-    phases = list(map(lambda e: e[0], d[comb]))
-    indices = list(map(lambda e: e[1], d[comb]))
-    colors = list(map(lambda e: [e/max_index, 0, 1-e/max_index],
-        indices))
-    #axes[i].scatter(
-    fig, ax = plt.subplots()
-    ax.set_ylim(0, 0.5)
-    ax.set_xlim(0, 0.9)
-    ax.set_xlabel("Phase")
-    ax.set_ylabel("Color Index")
-    ax.invert_yaxis()
-    ax.scatter(phases, indices, c=colors)
-    fig.savefig(f"img/color/{comb}.png")
-# TODO make a single plot, see also todo.cgi?f=tommy
-#for p in d[next(iter(d))]:
-#    print(p)
-#fig.savefig("/tmp/a.png")
+    phases = list(map(lambda x: x[0], d[comb]))
+    indices = list(map(lambda x: x[1], d[comb]))
+    colors = list(map(lambda x: [(x-min_index)/(max_index-min_index), 0,
+        1-(x-min_index)/(max_index-min_index)], indices))
+    #ax.scatter(phases, indices, c=colors, label=comb)
+    ax.plot(phases, indices, label=comb)
+
+ax.legend(fontsize=10, loc='upper right', ncols=4, bbox_to_anchor=(1, 1, 0, .14), borderaxespad=0)
+fig.savefig("/tmp/ci.png")
