@@ -1,111 +1,63 @@
 #!/usr/bin/env python3
 
-# TODO might be binning points twice; only needed once.
-
 import os
 import csv
 import json
-import math as m
-import subprocess as sp
+import itertools as it
 
-import matplotlib as mpl
 import matplotlib.pyplot as plt
 
-mpl.rcParams.update({'font.size': 14})
+plt.rcParams.update({'font.size': 12})
 
 def readin(filt, mag_comp):
-    ret = dict(filter=filt, phase=[], mag=[])
-    for i, row in enumerate(csv.reader(open(f"dat/{filt}.csv"))):
-        # row = [hjd, phase, targ_flux, comp1_flux, comp2_flux, mag]
-        if i == 0: continue
-        ret['phase'].append(float(row[1]))
-        ret['mag'].append(float(row[5]))
-    return ret
+    return [dict(phase=float(row[1]), mag=float(row[5]))
+        for row in it.islice(csv.reader(open(f"dat/{filt}.csv")), 1, None)]
 
-def avg_near(phase, key, dat):
-    ret = []
-    for i in range(len(dat['phase'])):
-        if abs(phase - dat['phase'][i]) < 0.05:
-            ret.append(dat[key][i])
-    return sum(ret)/len(ret) if len(ret) > 0 else 0
-
-# For each point p in the filter with the most points, iterate over the
-# other filters, calculating the average magnitude of all points for that
-# filter that are within 0.05 units of p's phase. Add these new points,
-# along with p, to a new set of points. This gives a set of points with
-# each point covering all filters.
+def mean(x):
+    return len(x) and sum(x)/len(x)
 
 c = json.load(open("dat/custom.json"))
 known = json.load(open("dat/known.json"))
-dat = sorted([readin(f, known[c['comp1']]['mags'][f])
-    for f in c['filters']], key=lambda d: len(d['phase']), reverse=True)
+dat = {f: readin(f, known[c['comp1']]['mags'][f]) for f in c['filters']}
+
 pts = {}
-max_mag = 0
-for i in range(len(dat[0]['phase'])):
-    phase = dat[0]['phase'][i]
-    mag = dat[0]['mag'][i]
-    filt = dat[0]['filter']
-    pt = {filt: mag}
+for i in [x/10 for x in range(0, 11)]:
+    pts[i] = {}
+    for filt in dat:
+        pts[i][filt] = [p['mag'] for p in dat[filt]
+            if i-0.05 < p['phase'] <= i+0.05]
 
-    for d in dat[1:]:
-        mag = avg_near(phase, 'mag', d)
-        if mag == 0:
-            break
-        pt[d['filter']] = mag
-    else:
-        pts[phase] = pt
+def combo(f1, f2):
+    n_pts = len(list(it.chain(*[pts[p][f1] + pts[p][f2] for p in pts])))
+    f_pts = [dict(phase=p, cidx=mean(pts[p][f1]) - mean(pts[p][f2]))
+        for p in pts if len(pts[p][f1]) > 0 and len(pts[p][f2]) > 0]
+    return dict(npts=n_pts, pts=f_pts)
 
-def mean(x):
-    return sum(x)/len(x)
-
-i = 0
-pts2 = {}
-while i < 1:
-    close_pts = list(filter(lambda p: abs(p-i) < 0.05, pts))
-    if len(close_pts) > 0:
-        pts2[i] = {}
-        for filt in pts[next(iter(pts))]:
-            pts2[i][filt] = mean([pts[p][filt] for p in close_pts])
-        #pts2[i] = [pts[p] for p in close_pts]
-    i += 0.05
-
-# Calculate the color index for each pair of filters (A, B) as
-# A_mag - B_mag and plot it.
-
-d={'B-V': []}
-for p in pts2:
-    d['B-V'].append((p, pts2[p]['B'] - pts2[p]['V']))
-
+# To include all filters, change 2 to 1 in both loops below
+d = {'B-V': combo('B', 'V')}
 for i in range(len(c['filters'])-2):
     f1 = c['filters'][i]
     for j in range(i+2, len(c['filters'])):
         f2 = c['filters'][j]
-        name = f1 + '-' + f2
-        if name not in d:
-            d[name] = []
-        for p in pts2:
-            d[name].append((p, pts2[p][f1] - pts2[p][f2]))
+        d[f1+'-'+f2] = combo(f1, f2)
 
-#fig, axes = plt.subplots(1, len(d))
-#for ax in axes:
-#    ax.invert_yaxis()
-#fig, ax = plt.subplots()
+min_pts = min([d[c]['npts'] for c in d])
+max_pts = max([d[c]['npts'] for c in d])
 
-os.makedirs("img/color", exist_ok=True)
-max_index = max([max([x[1] for x in d[c]]) for c in d])
-min_index = min([min([x[1] for x in d[c]]) for c in d])
 fig, ax = plt.subplots()
 ax.set_xlabel("Phase")
 ax.set_ylabel("Color Index")
+ax.tick_params(top=True, right=True, direction='in')
+markers = ['^', 'o', 2, 's', 3, 'd', 'v']
 
 for i, comb in enumerate(d):
-    d[comb].sort()
-    phases = list(map(lambda x: x[0], d[comb]))
-    indices = list(map(lambda x: x[1], d[comb]))
-    colors = list(map(lambda x: [(x-min_index)/(max_index-min_index), 0,
-        1-(x-min_index)/(max_index-min_index)], indices))
-    #ax.scatter(phases, indices, c=colors, label=comb)
-    ax.plot(phases, indices, label=comb)
+    phases = [x['phase'] for x in d[comb]['pts']]
+    indices = [x['cidx'] for x in d[comb]['pts']]
+    weight = (3*(d[comb]['npts']-min_pts))/(max_pts-min_pts) + 0.5
+    ax.plot(phases, indices, label=comb, linewidth=weight,
+        marker=markers[i], markersize=max(3, weight*3))
 
-ax.legend(fontsize=10, loc='upper right', ncols=4, bbox_to_anchor=(1, 1, 0, .14), borderaxespad=0)
-fig.savefig("/tmp/ci.png")
+ax.legend(fontsize=10, loc='upper right', ncols=4,
+    bbox_to_anchor=(1, 1, 0, .14), borderaxespad=0)
+os.makedirs("img/color", exist_ok=True)
+fig.savefig("img/color/index.png")
