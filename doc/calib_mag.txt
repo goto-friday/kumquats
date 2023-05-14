@@ -1,0 +1,8 @@
+cmag = calibrated magnitude
+mag = magnitude in image
+cmag_targ - mag_targ = cmag_comp - mag_comp
+cmag_targ = cmag_comp - mag_comp + mag_targ
+mag = 2.5*log10(flux)
+cmag_targ = cmag_comp - 2.5*log10(flux_comp) + 2.5*log10(flux_targ)
+cmag_targ = cmag_comp - 2.5*log10(flux_comp) - (-2.5*log10(flux_targ))
+cmag_targ = cmag_comp - 2.5*log10(flux_comp/flux_targ)
