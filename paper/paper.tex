@@ -299,6 +299,50 @@ Although each filter started with a slightly different number of images per filt
 \end{table}
 
 \section{Appendix B} \label{appb}
+
+\noindent
+Historically stars were cataloged into six magnitude categories, with category 1 being the brightest and category 6 being the dimmest, a convention created by Hipparchus (Hughes 2006). Later, in 1856, Norman R. Pogson introduced a logarithmic scale for magnitudes (Hughes 2006). He decided that a star of magnitude m is exactly $10^{\frac 2 5}$ brighter than one of magnitude $m+1$. In other words, this means that a star of magnitude 1 is 100 times brighter than a star of magnitude 6 (as $(10^{\frac 2 5})^5 = 100$, the 5 being because there are 5 ‘steps’ between a magnitude 1 and 6 star)
+\newline \newline
+In astronomy, flux is defined as the amount of energy/light received from the star divided by area of the receiver. When using the same images (or more specifically, the same telescope that thus has the same receiving area), a ratio of fluxes is essentially just brightness as the areas cancel. 
+\newline \newline
+Due to Pogson’s definition that became convention, a star of magnitude $m=6$ has flux $f_m$ that is 100 times smaller than the flux $f_n$ of a star of magnitude $n=1$. This can be written as: 
+
+\begin{equation}
+    \frac{f_n}{f_m} = 100 ^ {(\frac{m-n}{5}} = (10^2 )^ {(\frac{m-n}{5})}
+\end{equation}
+Then one can take the log of both sides and simplify using the exponent rule: 
+
+\begin{equation}
+    \log(\frac {f_n} {f_m}) = \log(10^2) ^ {((m-n)/5)} = (\frac{2*(m-n)}5)*\log(10) = (\frac{2*(m-n)}5)*1= \frac 2 5 (m-n)
+\end{equation}
+Or in shorter form: 
+
+\begin{equation} \label{eqd3}
+    \log(\frac {f_n} {f_m}) = \frac 2 5 (m-n)
+\end{equation}
+Then dividing the left side by $\frac 2 5$ gives
+
+\begin{equation}
+    \log (\frac {f_n} {f_m}) / (\frac 2 5) = \frac 5 2 \log (\frac {f_n} {f_m})
+\end{equation}
+And therefore \ref{eqd3} can be rewritten as this:
+
+\begin{equation}
+    2.5 \log (\frac {f_n} {f_m}) = m-n
+\end{equation}
+The negative is just due to the fact that we tend to write it as the star that is in the numerator of flux ratio is the first one in the difference (so $n-m$ instead of $m-n$ like we have here), so just simple rearranging.
+
+\begin{equation}
+    n-m = -2.5 \log (\frac {f_n} {f_m})
+\end{equation}
+Thus we obtain our final calibrated magnitude equation (\ref{eqcalmag}) by assigning $n$ to the target and $m$ to the comp: 
+
+\begin{equation}
+    \text {mag} _ {\text {calibrated}} = \text {mag} _ {\text {comp117}} - 2.5 \times \log \left( \frac {\text {flux} _ {\text {target}}} {\text {flux} _ {\text {comp117}}} \right) 
+\end{equation}
+
+
+\section{Appendix C} \label{appc}
 Figure \ref{fig:compratio} below shows the graphs of the ratio of flux of the chosen comp star combination, 106 and 95, in all the filters we have. Figure \ref{fig:calcomp106} below shows the graphs of the calibrated magnitude of comp 106 with respect to comp 95 in all the available filters (SG, SR, SI, B, and V) versus the phase of the images of the comp stars used. Table [TODO STDEV] shows the standard deviation that ratio for all comp star combinations and in all filters and the mean standard deviation across all filters used for each pair of comp stars used.
 
 \begin{figure}[H]
@@ -333,7 +377,8 @@ Figure \ref{fig:compratio} below shows the graphs of the ratio of flux of the ch
     \caption{Flux ratio standard deviation of comp star combination vs. filter.}
     \label{tab:stdevfluxcomps}
 \end{table}
-\section{Appendix C} \label{appc}
+
+\section{Appendix D} \label{appd}
 Figure \ref{fig:indivlightcurves} below shows the lightcurves of V765 Cas for the images from AAVSOnet, separated by filter.
 
 \begin{figure}[H]
@@ -357,48 +402,6 @@ Figure \ref{fig:indivlightcurves} below shows the lightcurves of V765 Cas for th
   \label{fig:indivlightcurves}
 \end{figure}
 
-\section{Appendix D} \label{appd}
-
-\noindent
-Historically stars were cataloged into six magnitude categories, with category 1 being the brightest and category 6 being the dimmest, a convention created by Hipparchus (Hughes 2006). Later, in 1856, Norman R. Pogson introduced a logarithmic scale for magnitudes (Hughes 2006). He decided that a star of magnitude m is exactly $10^{\frac 2 5}$ brighter than one of magnitude $m+1$. In other words, this means that a star of magnitude 1 is 100 times brighter than a star of magnitude 6 (as $(10^{\frac 2 5})^5 = 100$, the 5 being because there are 5 ‘steps’ between a magnitude 1 and 6 star)
-\newline \newline
-In astronomy, flux is defined as the amount of energy/light received from the star divided by area of the receiver. When using the same images (or more specifically, the same telescope that thus has the same receiving area), a ratio of fluxes is essentially just brightness as the areas cancel. 
-\newline \newline
-Due to Pogson’s definition that became convention, a star of magnitude $m=6$ has flux $f_m$ that is 100 times smaller than the flux $f_n$ of a star of magnitude $n=1$. This can be written as: 
-
-\begin{equation}
-    \frac{f_n}{f_m} = 100 ^ {(\frac{m-n}{5}} = (10^2 )^ {(\frac{m-n}{5}}
-\end{equation}
-Then one can take the log of both sides and simplify using the exponent rule: 
-
-\begin{equation}
-    \log(\frac {f_n} {f_m}) = \log(10^2) ^ {((m-n)/5)} = (\frac{2*(m-n)}5)*\log(10) = (\frac{2*(m-n)}5)*1= \frac 2 5 (m-n)
-\end{equation}
-Or in shorter form: 
-
-\begin{equation} \label{eqd3}
-    \log(\frac {f_n} {f_m}) = \frac 2 5 (m-n)
-\end{equation}
-Then dividing the left side by $\frac 2 5$ gives
-
-\begin{equation}
-    \log (\frac {f_n} {f_m}) / (\frac 2 5) = \frac 5 2 \log (\frac {f_n} {f_m})
-\end{equation}
-And therefore \ref{eqd3} can be rewritten as this:
-
-\begin{equation}
-    2.5 \log (\frac {f_n} {f_m}) = m-n
-\end{equation}
-The negative is just due to the fact that we tend to write it as the star that is in the numerator of flux ratio is the first one in the difference (so $n-m$ instead of $m-n$ like we have here), so just simple rearranging.
-
-\begin{equation}
-    n-m = -2.5 \log (\frac {f_n} {f_m})
-\end{equation}
-Thus we obtain our final calibrated magnitude equation (\ref{eqcalmag}) by assigning $n$ to the target and $m$ to the comp: 
-
-\begin{equation}
-    \text {mag} _ {\text {calibrated}} = \text {mag} _ {\text {comp117}} - 2.5 \times \log \left( \frac {\text {flux} _ {\text {target}}} {\text {flux} _ {\text {comp117}}} \right) 
-\end{equation}
 \bibliography{refs}{}
 \bibliographystyle{aasjournal}
 \end{document}
