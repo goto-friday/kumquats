@@ -1,0 +1,37 @@
+
+rule gengraph
+  command = { ninja -t graph | gvpr -i 'N[label!="src/*.py"]' | $
+    dot -Tdot | gvcolor | dot -Tsvg | sed -n '$$!p'; $
+    echo '<script><![CDATA['; cat lib/graph.js; $
+    echo ']]></script></svg>'; } > $out
+build dag.svg: gengraph build.ninja
+
+rule build.py
+  command = ./build.py
+  pool = console
+build build.ninja: build.py ./build.py lib/x.py lib/graph.js
+
+rule query.py
+  command = src/query.py
+  pool = console
+build dat/known.json: query.py src/query.py dat/config.yml
+
+rule calibrate.py
+  command = src/calibrate.py
+  pool = console
+build dat/B.csv dat/V.csv dat/SG.csv dat/SR.csv dat/SI.csv: calibrate.py src/calibrate.py dat/config.yml dat/known.json dat/stars.json dat/period.json
+
+rule period.py
+  command = src/period.py
+  pool = console
+build dat/period.json img/period.png: period.py src/period.py dat/config.yml dat/known.json
+
+rule color_index.py
+  command = src/color_index.py
+  pool = console
+build img/color_index.png: color_index.py src/color_index.py dat/config.yml dat/known.json dat/B.csv dat/V.csv dat/SG.csv dat/SR.csv dat/SI.csv
+
+rule lightcurves.py
+  command = src/lightcurves.py
+  pool = console
+build img/lightcurve.png: lightcurves.py src/lightcurves.py dat/config.yml dat/known.json dat/period.json dat/B.csv dat/V.csv dat/SG.csv dat/SR.csv dat/SI.csv

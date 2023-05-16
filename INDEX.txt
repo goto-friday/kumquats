@@ -1,5 +1,6 @@
-dat: data, for use in scripts
-out: programmatically-generated data, not intended for scripts
-img: images
-src: scripts
-lib: helper files, mostly code-related
+dat: Data, for use in scripts
+out: Programmatically-generated data, not intended for scripts
+img: Images
+src: Code
+lib: Helper files, mostly code-related
+https://colab.research.google.com/drive/12IUEmgnu3MStbRgnnxSYQXbQcODT01LU: Notebook to build this repo.

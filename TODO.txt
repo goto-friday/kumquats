@@ -2,7 +2,5 @@ Rewrite photometry script, use "Comp XX" instead of "compXX" and include filenam
 Interactive plotting lib
 Gitignore tex output files
 Copy Dr. Janzen's script to make asassn.csv ourselves.
-https://colab.research.google.com/drive/12IUEmgnu3MStbRgnnxSYQXbQcODT01LU
 Git hook to make sure ninja has been run
 Git hook to check that all files are documented in INDEX and all files in INDEX exist (maybe allow skipping test via env var?)
-Rewrite https://github.com/jrfonseca/xdot.py in svg?
