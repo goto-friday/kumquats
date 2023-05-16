@@ -1,4 +1,4 @@
-#!/bin/sh -e
+#!/bin/sh -ex
 
 sys_pkgs="ffmpeg ninja-build texlive graphviz"
 pip_pkgs="matplotlib astropy astroquery lightkurve PyYAML"
@@ -14,7 +14,7 @@ git_hooks() {
 }
 
 if test $# -gt 0; then
-	for arg; do $arg; done
+	for arg; do "$arg"; done
 else
 	pkgs
 	git_hooks

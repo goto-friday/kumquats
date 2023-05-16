@@ -9,340 +9,340 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 475.5)">
 <title>gvpr_result</title>
 <polygon fill="white" stroke="none" points="-4,4 -4,-475.5 1238,-475.5 1238,4 -4,4"/>
-<!-- 0x2238220 -->
+<!-- 0x992220 -->
 <g id="node1" class="node">
-<title>0x2238220</title>
+<title>0x992220</title>
 <polygon fill="lightgrey" stroke="black" points="507.5,-56 450.5,-56 450.5,-37 507.5,-37 507.5,-56"/>
 <text text-anchor="middle" x="479" y="-44" font-family="Times,serif" font-size="10.00">dag.svg</text>
 </g>
-<!-- 0x2236df0 -->
+<!-- 0x990df0 -->
 <g id="node2" class="node">
-<title>0x2236df0</title>
+<title>0x990df0</title>
 <polygon fill="lightgrey" stroke="black" points="331.5,-56 260.5,-56 260.5,-37 331.5,-37 331.5,-56"/>
 <text text-anchor="middle" x="296" y="-44" font-family="Times,serif" font-size="10.00">build.ninja</text>
 </g>
-<!-- 0x2236df0&#45;&gt;0x2238220 -->
+<!-- 0x990df0&#45;&gt;0x992220 -->
 <g id="edge1" class="edge">
-<title>0x2236df0&#45;&gt;0x2238220</title>
+<title>0x990df0&#45;&gt;0x992220</title>
 <path fill="none" stroke="black" d="M331.9,-46.5C362.55,-46.5 407.09,-46.5 438.92,-46.5"/>
 <polygon fill="black" stroke="black" points="438.52,-50 448.52,-46.5 438.52,-43 438.52,-50"/>
 <text text-anchor="middle" x="388" y="-49.5" font-family="Times,serif" font-size="10.00"> gengraph</text>
 </g>
-<!-- 0x2237250 -->
+<!-- 0x991250 -->
 <g id="node3" class="node">
-<title>0x2237250</title>
+<title>0x991250</title>
 <ellipse fill="lightgrey" stroke="black" cx="169" cy="-46.5" rx="41.54" ry="13.5"/>
 <text text-anchor="middle" x="169" y="-44" font-family="Times,serif" font-size="10.00">build.py</text>
 </g>
-<!-- 0x2237250&#45;&gt;0x2236df0 -->
+<!-- 0x991250&#45;&gt;0x990df0 -->
 <g id="edge2" class="edge">
-<title>0x2237250&#45;&gt;0x2236df0</title>
+<title>0x991250&#45;&gt;0x990df0</title>
 <path fill="none" stroke="black" d="M210.93,-46.5C223.14,-46.5 236.6,-46.5 249.11,-46.5"/>
 <polygon fill="black" stroke="black" points="248.75,-50 258.75,-46.5 248.75,-43 248.75,-50"/>
 </g>
-<!-- 0x2237300 -->
+<!-- 0x991300 -->
 <g id="node4" class="node">
-<title>0x2237300</title>
+<title>0x991300</title>
 <polygon fill="lightgrey" stroke="black" points="74,-93 15,-93 15,-74 74,-74 74,-93"/>
 <text text-anchor="middle" x="44.5" y="-81" font-family="Times,serif" font-size="10.00">build.py</text>
 </g>
-<!-- 0x2237300&#45;&gt;0x2237250 -->
+<!-- 0x991300&#45;&gt;0x991250 -->
 <g id="edge3" class="edge">
-<title>0x2237300&#45;&gt;0x2237250</title>
+<title>0x991300&#45;&gt;0x991250</title>
 <path fill="none" stroke="black" d="M74.22,-74.83C93.31,-69.06 118.35,-61.5 137.75,-55.64"/>
 </g>
-<!-- 0x22373a0 -->
+<!-- 0x9913a0 -->
 <g id="node5" class="node">
-<title>0x22373a0</title>
+<title>0x9913a0</title>
 <polygon fill="lightgrey" stroke="black" points="71.5,-56 17.5,-56 17.5,-37 71.5,-37 71.5,-56"/>
 <text text-anchor="middle" x="44.5" y="-44" font-family="Times,serif" font-size="10.00">lib/x.py</text>
 </g>
-<!-- 0x22373a0&#45;&gt;0x2237250 -->
+<!-- 0x9913a0&#45;&gt;0x991250 -->
 <g id="edge4" class="edge">
-<title>0x22373a0&#45;&gt;0x2237250</title>
+<title>0x9913a0&#45;&gt;0x991250</title>
 <path fill="none" stroke="black" d="M71.78,-46.5C87.95,-46.5 109.01,-46.5 127.3,-46.5"/>
 </g>
-<!-- 0x2237470 -->
+<!-- 0x991470 -->
 <g id="node6" class="node">
-<title>0x2237470</title>
+<title>0x991470</title>
 <polygon fill="lightgrey" stroke="black" points="81.5,-19 7.5,-19 7.5,0 81.5,0 81.5,-19"/>
 <text text-anchor="middle" x="44.5" y="-7" font-family="Times,serif" font-size="10.00">lib/graph.js</text>
 </g>
-<!-- 0x2237470&#45;&gt;0x2237250 -->
+<!-- 0x991470&#45;&gt;0x991250 -->
 <g id="edge5" class="edge">
-<title>0x2237470&#45;&gt;0x2237250</title>
+<title>0x991470&#45;&gt;0x991250</title>
 <path fill="none" stroke="black" d="M78.33,-19.42C96.75,-24.98 119.59,-31.88 137.61,-37.32"/>
 </g>
-<!-- 0x2238f50 -->
+<!-- 0x992f50 -->
 <g id="node7" class="node">
-<title>0x2238f50</title>
+<title>0x992f50</title>
 <polygon fill="lightgrey" stroke="black" points="657,-443 562,-443 562,-424 657,-424 657,-443"/>
 <text text-anchor="middle" x="609.5" y="-431" font-family="Times,serif" font-size="10.00">img/period.png</text>
 </g>
-<!-- 0x2238e70 -->
+<!-- 0x992e70 -->
 <g id="node8" class="node">
-<title>0x2238e70</title>
+<title>0x992e70</title>
 <ellipse fill="lightgrey" stroke="black" cx="479" cy="-405.5" rx="46" ry="13.5"/>
 <text text-anchor="middle" x="479" y="-403" font-family="Times,serif" font-size="10.00">period.py</text>
 </g>
-<!-- 0x2238e70&#45;&gt;0x2238f50 -->
+<!-- 0x992e70&#45;&gt;0x992f50 -->
 <g id="edge6" class="edge">
-<title>0x2238e70&#45;&gt;0x2238f50</title>
+<title>0x992e70&#45;&gt;0x992f50</title>
 <path fill="none" stroke="black" d="M516.82,-413.52C527.73,-415.9 539.93,-418.56 551.78,-421.14"/>
 <polygon fill="black" stroke="black" points="550.99,-424.55 561.51,-423.26 552.48,-417.71 550.99,-424.55"/>
 </g>
-<!-- 0x2238b30 -->
+<!-- 0x992b30 -->
 <g id="node9" class="node">
-<title>0x2238b30</title>
+<title>0x992b30</title>
 <polygon fill="lightgrey" stroke="black" points="656,-406 563,-406 563,-387 656,-387 656,-406"/>
 <text text-anchor="middle" x="609.5" y="-394" font-family="Times,serif" font-size="10.00">dat/period.json</text>
 </g>
-<!-- 0x2238e70&#45;&gt;0x2238b30 -->
+<!-- 0x992e70&#45;&gt;0x992b30 -->
 <g id="edge7" class="edge">
-<title>0x2238e70&#45;&gt;0x2238b30</title>
+<title>0x992e70&#45;&gt;0x992b30</title>
 <path fill="none" stroke="black" d="M524.22,-402.4C533,-401.79 542.34,-401.13 551.47,-400.49"/>
 <polygon fill="black" stroke="black" points="551.64,-403.99 561.37,-399.8 551.15,-397.01 551.64,-403.99"/>
 </g>
-<!-- 0x2238010 -->
+<!-- 0x992010 -->
 <g id="node10" class="node">
-<title>0x2238010</title>
+<title>0x992010</title>
 <ellipse fill="lightgrey" stroke="black" cx="748.5" cy="-276.5" rx="54.5" ry="13.5"/>
 <text text-anchor="middle" x="748.5" y="-274" font-family="Times,serif" font-size="10.00">calibrate.py</text>
 </g>
-<!-- 0x2238b30&#45;&gt;0x2238010 -->
+<!-- 0x992b30&#45;&gt;0x992010 -->
 <g id="edge8" class="edge">
-<title>0x2238b30&#45;&gt;0x2238010</title>
+<title>0x992b30&#45;&gt;0x992010</title>
 <path fill="none" stroke="black" d="M621.71,-386.68C646.25,-365.19 704.74,-313.96 732.45,-289.69"/>
 </g>
-<!-- 0x2239c60 -->
+<!-- 0x993c60 -->
 <g id="node11" class="node">
-<title>0x2239c60</title>
+<title>0x993c60</title>
 <ellipse fill="lightgrey" stroke="black" cx="1011.5" cy="-358.5" rx="63" ry="13.5"/>
 <text text-anchor="middle" x="1011.5" y="-356" font-family="Times,serif" font-size="10.00">lightcurves.py</text>
 </g>
-<!-- 0x2238b30&#45;&gt;0x2239c60 -->
+<!-- 0x992b30&#45;&gt;0x993c60 -->
 <g id="edge9" class="edge">
-<title>0x2238b30&#45;&gt;0x2239c60</title>
+<title>0x992b30&#45;&gt;0x993c60</title>
 <path fill="none" stroke="black" d="M641.33,-406.4C699.35,-423.37 828,-453.11 929,-419.5 957,-410.18 983.15,-387.06 997.95,-372.11"/>
 </g>
-<!-- 0x2238500 -->
+<!-- 0x992500 -->
 <g id="node12" class="node">
-<title>0x2238500</title>
+<title>0x992500</title>
 <polygon fill="lightgrey" stroke="black" points="906.5,-367 843.5,-367 843.5,-348 906.5,-348 906.5,-367"/>
 <text text-anchor="middle" x="875" y="-355" font-family="Times,serif" font-size="10.00">dat/B.csv</text>
 </g>
-<!-- 0x2238010&#45;&gt;0x2238500 -->
+<!-- 0x992010&#45;&gt;0x992500 -->
 <g id="edge10" class="edge">
-<title>0x2238010&#45;&gt;0x2238500</title>
+<title>0x992010&#45;&gt;0x992500</title>
 <path fill="none" stroke="black" d="M769.23,-289.33C790.85,-303.4 825.58,-326 849.07,-341.28"/>
 <polygon fill="black" stroke="black" points="847.12,-344.19 857.41,-346.71 850.94,-338.32 847.12,-344.19"/>
 </g>
-<!-- 0x22385b0 -->
+<!-- 0x9925b0 -->
 <g id="node13" class="node">
-<title>0x22385b0</title>
+<title>0x9925b0</title>
 <polygon fill="lightgrey" stroke="black" points="905.5,-282 844.5,-282 844.5,-263 905.5,-263 905.5,-282"/>
 <text text-anchor="middle" x="875" y="-270" font-family="Times,serif" font-size="10.00">dat/V.csv</text>
 </g>
-<!-- 0x2238010&#45;&gt;0x22385b0 -->
+<!-- 0x992010&#45;&gt;0x9925b0 -->
 <g id="edge11" class="edge">
-<title>0x2238010&#45;&gt;0x22385b0</title>
+<title>0x992010&#45;&gt;0x9925b0</title>
 <path fill="none" stroke="black" d="M803.02,-274.78C813.05,-274.46 823.38,-274.13 832.96,-273.82"/>
 <polygon fill="black" stroke="black" points="832.79,-277.33 842.68,-273.51 832.57,-270.33 832.79,-277.33"/>
 </g>
-<!-- 0x2238660 -->
+<!-- 0x992660 -->
 <g id="node14" class="node">
-<title>0x2238660</title>
+<title>0x992660</title>
 <polygon fill="lightgrey" stroke="black" points="910,-243 840,-243 840,-224 910,-224 910,-243"/>
 <text text-anchor="middle" x="875" y="-231" font-family="Times,serif" font-size="10.00">dat/SG.csv</text>
 </g>
-<!-- 0x2238010&#45;&gt;0x2238660 -->
+<!-- 0x992010&#45;&gt;0x992660 -->
 <g id="edge12" class="edge">
-<title>0x2238010&#45;&gt;0x2238660</title>
+<title>0x992010&#45;&gt;0x992660</title>
 <path fill="none" stroke="black" d="M781.56,-265.43C797.76,-259.83 817.55,-253 834.65,-247.09"/>
 <polygon fill="black" stroke="black" points="835.7,-250.43 844.01,-243.86 833.42,-243.81 835.7,-250.43"/>
 </g>
-<!-- 0x2238710 -->
+<!-- 0x992710 -->
 <g id="node15" class="node">
-<title>0x2238710</title>
+<title>0x992710</title>
 <polygon fill="lightgrey" stroke="black" points="910,-319 840,-319 840,-300 910,-300 910,-319"/>
 <text text-anchor="middle" x="875" y="-307" font-family="Times,serif" font-size="10.00">dat/SR.csv</text>
 </g>
-<!-- 0x2238010&#45;&gt;0x2238710 -->
+<!-- 0x992010&#45;&gt;0x992710 -->
 <g id="edge13" class="edge">
-<title>0x2238010&#45;&gt;0x2238710</title>
+<title>0x992010&#45;&gt;0x992710</title>
 <path fill="none" stroke="black" d="M786.85,-286.4C800.08,-289.91 815.1,-293.89 828.9,-297.55"/>
 <polygon fill="black" stroke="black" points="827.62,-300.83 838.18,-300.01 829.42,-294.06 827.62,-300.83"/>
 </g>
-<!-- 0x22387c0 -->
+<!-- 0x9927c0 -->
 <g id="node16" class="node">
-<title>0x22387c0</title>
+<title>0x9927c0</title>
 <polygon fill="lightgrey" stroke="black" points="908,-194 842,-194 842,-175 908,-175 908,-194"/>
 <text text-anchor="middle" x="875" y="-182" font-family="Times,serif" font-size="10.00">dat/SI.csv</text>
 </g>
-<!-- 0x2238010&#45;&gt;0x22387c0 -->
+<!-- 0x992010&#45;&gt;0x9927c0 -->
 <g id="edge14" class="edge">
-<title>0x2238010&#45;&gt;0x22387c0</title>
+<title>0x992010&#45;&gt;0x9927c0</title>
 <path fill="none" stroke="black" d="M767.07,-263.51C789.22,-247.15 827.33,-218.99 851.56,-201.08"/>
 <polygon fill="black" stroke="black" points="853.53,-203.98 859.49,-195.22 849.37,-198.35 853.53,-203.98"/>
 </g>
-<!-- 0x2239cf0 -->
+<!-- 0x993cf0 -->
 <g id="node17" class="node">
-<title>0x2239cf0</title>
+<title>0x993cf0</title>
 <polygon fill="lightgrey" stroke="black" points="1230.5,-368 1116.5,-368 1116.5,-349 1230.5,-349 1230.5,-368"/>
 <text text-anchor="middle" x="1173.5" y="-356" font-family="Times,serif" font-size="10.00">img/lightcurve.png</text>
 </g>
-<!-- 0x2239c60&#45;&gt;0x2239cf0 -->
+<!-- 0x993c60&#45;&gt;0x993cf0 -->
 <g id="edge15" class="edge">
-<title>0x2239c60&#45;&gt;0x2239cf0</title>
+<title>0x993c60&#45;&gt;0x993cf0</title>
 <path fill="none" stroke="black" d="M1074.82,-358.5C1084.59,-358.5 1094.74,-358.5 1104.63,-358.5"/>
 <polygon fill="black" stroke="black" points="1104.58,-362 1114.58,-358.5 1104.58,-355 1104.58,-362"/>
 </g>
-<!-- 0x2238500&#45;&gt;0x2239c60 -->
+<!-- 0x992500&#45;&gt;0x993c60 -->
 <g id="edge16" class="edge">
-<title>0x2238500&#45;&gt;0x2239c60</title>
+<title>0x992500&#45;&gt;0x993c60</title>
 <path fill="none" stroke="black" d="M906.87,-365.83C913.77,-367.36 921.1,-368.71 928,-369.5 940.63,-370.94 954.33,-370.09 966.87,-368.35"/>
 </g>
-<!-- 0x2239480 -->
+<!-- 0x993480 -->
 <g id="node18" class="node">
-<title>0x2239480</title>
+<title>0x993480</title>
 <ellipse fill="lightgrey" stroke="black" cx="1011.5" cy="-208.5" rx="64.5" ry="13.5"/>
 <text text-anchor="middle" x="1011.5" y="-206" font-family="Times,serif" font-size="10.00">color_index.py</text>
 </g>
-<!-- 0x2238500&#45;&gt;0x2239480 -->
+<!-- 0x992500&#45;&gt;0x993480 -->
 <g id="edge17" class="edge">
-<title>0x2238500&#45;&gt;0x2239480</title>
+<title>0x992500&#45;&gt;0x993480</title>
 <path fill="none" stroke="black" d="M888.72,-347.51C895.3,-342.12 903.34,-335.22 910,-328.5 945.77,-292.41 982.91,-245.01 1000.33,-222.09"/>
 </g>
-<!-- 0x22385b0&#45;&gt;0x2239c60 -->
+<!-- 0x9925b0&#45;&gt;0x993c60 -->
 <g id="edge18" class="edge">
-<title>0x22385b0&#45;&gt;0x2239c60</title>
+<title>0x9925b0&#45;&gt;0x993c60</title>
 <path fill="none" stroke="black" d="M894.5,-282.49C899.57,-285.33 905.04,-288.47 910,-291.5 939.16,-309.33 971.93,-331.62 991.89,-345.46"/>
 </g>
-<!-- 0x22385b0&#45;&gt;0x2239480 -->
+<!-- 0x9925b0&#45;&gt;0x993480 -->
 <g id="edge19" class="edge">
-<title>0x22385b0&#45;&gt;0x2239480</title>
+<title>0x9925b0&#45;&gt;0x993480</title>
 <path fill="none" stroke="black" d="M897.02,-262.5C920.51,-251.32 958.6,-233.2 984.09,-221.07"/>
 </g>
-<!-- 0x2238660&#45;&gt;0x2239c60 -->
+<!-- 0x992660&#45;&gt;0x993c60 -->
 <g id="edge20" class="edge">
-<title>0x2238660&#45;&gt;0x2239c60</title>
+<title>0x992660&#45;&gt;0x993c60</title>
 <path fill="none" stroke="black" d="M894.96,-243.41C900.03,-246.39 905.38,-249.84 910,-253.5 946.41,-282.31 982.4,-323.95 999.76,-345.09"/>
 </g>
-<!-- 0x2238660&#45;&gt;0x2239480 -->
+<!-- 0x992660&#45;&gt;0x993480 -->
 <g id="edge21" class="edge">
-<title>0x2238660&#45;&gt;0x2239480</title>
+<title>0x992660&#45;&gt;0x993480</title>
 <path fill="none" stroke="black" d="M910.36,-226.03C916.24,-224.81 922.29,-223.59 928,-222.5 938.13,-220.57 948.99,-218.63 959.39,-216.84"/>
 </g>
-<!-- 0x2238710&#45;&gt;0x2239c60 -->
+<!-- 0x992710&#45;&gt;0x993c60 -->
 <g id="edge22" class="edge">
-<title>0x2238710&#45;&gt;0x2239c60</title>
+<title>0x992710&#45;&gt;0x993c60</title>
 <path fill="none" stroke="black" d="M903.22,-319.42C924.86,-327.3 955.21,-338.36 978.11,-346.7"/>
 </g>
-<!-- 0x2238710&#45;&gt;0x2239480 -->
+<!-- 0x992710&#45;&gt;0x993480 -->
 <g id="edge23" class="edge">
-<title>0x2238710&#45;&gt;0x2239480</title>
+<title>0x992710&#45;&gt;0x993480</title>
 <path fill="none" stroke="black" d="M896.17,-299.69C900.82,-297.19 905.67,-294.39 910,-291.5 942.75,-269.64 977.41,-239.15 996.25,-221.86"/>
 </g>
-<!-- 0x22387c0&#45;&gt;0x2239c60 -->
+<!-- 0x9927c0&#45;&gt;0x993c60 -->
 <g id="edge24" class="edge">
-<title>0x22387c0&#45;&gt;0x2239c60</title>
+<title>0x9927c0&#45;&gt;0x993c60</title>
 <path fill="none" stroke="black" d="M888.61,-194.39C895.32,-199.95 903.5,-207.22 910,-214.5 949.38,-258.63 986.79,-318.57 1002.6,-345.02"/>
 </g>
-<!-- 0x22387c0&#45;&gt;0x2239480 -->
+<!-- 0x9927c0&#45;&gt;0x993480 -->
 <g id="edge25" class="edge">
-<title>0x22387c0&#45;&gt;0x2239480</title>
+<title>0x9927c0&#45;&gt;0x993480</title>
 <path fill="none" stroke="black" d="M900.24,-174.54C909.26,-172.01 919.58,-170.51 929,-172.5 950.04,-176.94 972.26,-187.17 988.17,-195.6"/>
 </g>
-<!-- 0x2239510 -->
+<!-- 0x993510 -->
 <g id="node22" class="node">
-<title>0x2239510</title>
+<title>0x993510</title>
 <polygon fill="lightgrey" stroke="black" points="1234,-218 1113,-218 1113,-199 1234,-199 1234,-218"/>
 <text text-anchor="middle" x="1173.5" y="-206" font-family="Times,serif" font-size="10.00">img/color_index.png</text>
 </g>
-<!-- 0x2239480&#45;&gt;0x2239510 -->
+<!-- 0x993480&#45;&gt;0x993510 -->
 <g id="edge32" class="edge">
-<title>0x2239480&#45;&gt;0x2239510</title>
+<title>0x993480&#45;&gt;0x993510</title>
 <path fill="none" stroke="black" d="M1076.2,-208.5C1084.46,-208.5 1092.97,-208.5 1101.35,-208.5"/>
 <polygon fill="black" stroke="black" points="1101.15,-212 1111.15,-208.5 1101.15,-205 1101.15,-212"/>
 </g>
-<!-- 0x2237a00 -->
+<!-- 0x991a00 -->
 <g id="node19" class="node">
-<title>0x2237a00</title>
+<title>0x991a00</title>
 <polygon fill="lightgrey" stroke="black" points="89,-351 0,-351 0,-332 89,-332 89,-351"/>
 <text text-anchor="middle" x="44.5" y="-339" font-family="Times,serif" font-size="10.00">dat/config.yml</text>
 </g>
-<!-- 0x2237a00&#45;&gt;0x2238e70 -->
+<!-- 0x991a00&#45;&gt;0x992e70 -->
 <g id="edge26" class="edge">
-<title>0x2237a00&#45;&gt;0x2238e70</title>
+<title>0x991a00&#45;&gt;0x992e70</title>
 <path fill="none" stroke="black" d="M75.79,-351.42C90.76,-355.99 109.18,-361.14 126,-364.5 235.5,-386.37 366.67,-397.84 433.74,-402.66"/>
 </g>
-<!-- 0x2237a00&#45;&gt;0x2238010 -->
+<!-- 0x991a00&#45;&gt;0x992010 -->
 <g id="edge27" class="edge">
-<title>0x2237a00&#45;&gt;0x2238010</title>
+<title>0x991a00&#45;&gt;0x992010</title>
 <path fill="none" stroke="black" d="M46.79,-331.56C52.55,-291.82 79.64,-146.5 168,-146.5 168,-146.5 168,-146.5 610.5,-146.5 677.72,-146.5 725.13,-229.86 741.36,-263.08"/>
 </g>
-<!-- 0x2237a00&#45;&gt;0x2239c60 -->
+<!-- 0x991a00&#45;&gt;0x993c60 -->
 <g id="edge28" class="edge">
-<title>0x2237a00&#45;&gt;0x2239c60</title>
+<title>0x991a00&#45;&gt;0x993c60</title>
 <path fill="none" stroke="black" d="M49.12,-351.27C61.01,-381.5 101.95,-471.5 168,-471.5 168,-471.5 168,-471.5 876,-471.5 937,-471.5 984.78,-402.53 1002.76,-372.36"/>
 </g>
-<!-- 0x2237a00&#45;&gt;0x2239480 -->
+<!-- 0x991a00&#45;&gt;0x993480 -->
 <g id="edge30" class="edge">
-<title>0x2237a00&#45;&gt;0x2239480</title>
+<title>0x991a00&#45;&gt;0x993480</title>
 <path fill="none" stroke="black" d="M45.95,-331.78C48.54,-287.69 65.4,-108.5 168,-108.5 168,-108.5 168,-108.5 876,-108.5 933.32,-108.5 982.07,-167.72 1001.49,-195.01"/>
 </g>
-<!-- 0x22377f0 -->
+<!-- 0x9917f0 -->
 <g id="node20" class="node">
-<title>0x22377f0</title>
+<title>0x9917f0</title>
 <ellipse fill="lightgrey" stroke="black" cx="169" cy="-341.5" rx="43" ry="13.5"/>
 <text text-anchor="middle" x="169" y="-339" font-family="Times,serif" font-size="10.00">query.py</text>
 </g>
-<!-- 0x2237a00&#45;&gt;0x22377f0 -->
+<!-- 0x991a00&#45;&gt;0x9917f0 -->
 <g id="edge29" class="edge">
-<title>0x2237a00&#45;&gt;0x22377f0</title>
+<title>0x991a00&#45;&gt;0x9917f0</title>
 <path fill="none" stroke="black" d="M89.38,-341.5C101.19,-341.5 113.93,-341.5 125.66,-341.5"/>
 </g>
-<!-- 0x2237880 -->
+<!-- 0x991880 -->
 <g id="node21" class="node">
-<title>0x2237880</title>
+<title>0x991880</title>
 <polygon fill="lightgrey" stroke="black" points="343,-351 249,-351 249,-332 343,-332 343,-351"/>
 <text text-anchor="middle" x="296" y="-339" font-family="Times,serif" font-size="10.00">dat/known.json</text>
 </g>
-<!-- 0x22377f0&#45;&gt;0x2237880 -->
+<!-- 0x9917f0&#45;&gt;0x991880 -->
 <g id="edge31" class="edge">
-<title>0x22377f0&#45;&gt;0x2237880</title>
+<title>0x9917f0&#45;&gt;0x991880</title>
 <path fill="none" stroke="black" d="M212.32,-341.5C220.4,-341.5 228.99,-341.5 237.46,-341.5"/>
 <polygon fill="black" stroke="black" points="237.35,-345 247.35,-341.5 237.35,-338 237.35,-345"/>
 </g>
-<!-- 0x2237880&#45;&gt;0x2238e70 -->
+<!-- 0x991880&#45;&gt;0x992e70 -->
 <g id="edge33" class="edge">
-<title>0x2237880&#45;&gt;0x2238e70</title>
+<title>0x991880&#45;&gt;0x992e70</title>
 <path fill="none" stroke="black" d="M318.08,-351.45C330.45,-357.1 346.45,-364.1 361,-369.5 388.69,-379.78 420.81,-389.51 444.38,-396.26"/>
 </g>
-<!-- 0x2237880&#45;&gt;0x2238010 -->
+<!-- 0x991880&#45;&gt;0x992010 -->
 <g id="edge34" class="edge">
-<title>0x2237880&#45;&gt;0x2238010</title>
+<title>0x991880&#45;&gt;0x992010</title>
 <path fill="none" stroke="black" d="M343.49,-336.76C412.25,-329.48 545.01,-314.38 657,-295.5 673.46,-292.72 691.49,-289.07 707.09,-285.71"/>
 </g>
-<!-- 0x2237880&#45;&gt;0x2239c60 -->
+<!-- 0x991880&#45;&gt;0x993c60 -->
 <g id="edge35" class="edge">
-<title>0x2237880&#45;&gt;0x2239c60</title>
+<title>0x991880&#45;&gt;0x993c60</title>
 <path fill="none" stroke="black" d="M343.26,-345.64C447.51,-354.73 708.81,-376.21 928,-383.5 947.59,-384.15 968.74,-377.59 984.72,-371.03"/>
 </g>
-<!-- 0x2237880&#45;&gt;0x2239480 -->
+<!-- 0x991880&#45;&gt;0x993480 -->
 <g id="edge36" class="edge">
-<title>0x2237880&#45;&gt;0x2239480</title>
+<title>0x991880&#45;&gt;0x993480</title>
 <path fill="none" stroke="black" d="M319.14,-331.52C391.82,-299.35 630.53,-198.6 840,-165.5 879.09,-159.32 891.27,-156.56 929,-168.5 950.19,-175.2 972.76,-186.66 988.76,-195.59"/>
 </g>
-<!-- 0x2238a90 -->
+<!-- 0x992a90 -->
 <g id="node23" class="node">
-<title>0x2238a90</title>
+<title>0x992a90</title>
 <polygon fill="lightgrey" stroke="black" points="652,-286 567,-286 567,-267 652,-267 652,-286"/>
 <text text-anchor="middle" x="609.5" y="-274" font-family="Times,serif" font-size="10.00">dat/stars.json</text>
 </g>
-<!-- 0x2238a90&#45;&gt;0x2238010 -->
+<!-- 0x992a90&#45;&gt;0x992010 -->
 <g id="edge37" class="edge">
-<title>0x2238a90&#45;&gt;0x2238010</title>
+<title>0x992a90&#45;&gt;0x992010</title>
 <path fill="none" stroke="black" d="M652.35,-276.5C665.41,-276.5 680.01,-276.5 693.77,-276.5"/>
 </g>
 </g>
