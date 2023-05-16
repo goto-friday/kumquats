@@ -1,0 +1,5 @@
+dat: data, for use in scripts
+out: programmatically-generated data, not intended for scripts
+img: images
+src: scripts
+lib: helper files, mostly code-related

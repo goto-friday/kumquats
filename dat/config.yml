@@ -1,0 +1,18 @@
+target: V765 Cas
+filters: [B, V, SG, SR, SI] # sorted by wavelength; http://aavso.org/filters
+tess_pipeline: CDIPS
+# TODO decide these programmatically
+comp: Comp 98
+check: Comp 117
+# TODO generate this from somewhere
+period: 1.715779
+# TODO determine these programmatically
+eclipses:
+  primary:
+    - {start: 0, end: 0.1}
+    - {start: 0.9, end: 1}
+  secondary:
+    - {start: 0.4, end: 0.55}
+# TODO decide these programmatically
+period_lower_lim: 1.7
+period_upper_lim: 1.75

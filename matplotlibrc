@@ -1,0 +1,7 @@
+# XXX dpi?
+# XXX smaller bounding box?
+font.size: 12
+xtick.top: True
+ytick.right: True
+xtick.direction: in
+ytick.direction: in

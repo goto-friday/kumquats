@@ -1,0 +1,3 @@
+info.py - General analysis to be referenced in the text, such as the presence of red giants in the cluster. Should not write any output files beyond out/info.txt.
+calibrate.py - Creates CSVs with phase and calibrated magnitudes per filter.
+query.py - Queries databases. All common queries should be done here.
