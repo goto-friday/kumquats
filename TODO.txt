@@ -1,4 +1,6 @@
 Rewrite photometry script, use "Comp XX" instead of "compXX" and include filenames, make hjd keys floats rather than strings
-Interactive plotting lib
-Gitignore tex output files
+Interactive plotting lib?
 Copy Dr. Janzen's script to make asassn.csv ourselves.
+Finish the QR doc/page
+Short screencast: decrease speed of Sabine and JB's sections
+Slides: title/caption can be above or below figures, but do it consistently

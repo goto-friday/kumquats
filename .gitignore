@@ -1,3 +1,8 @@
 **/__pycache__
+#**/*.{aux,log,bcf,out}
+**/*.aux
+**/*.log
+**/*.bcf
+**/*.out
 .ninja_log
 .ninja_deps
