@@ -4,3 +4,6 @@ Copy Dr. Janzen's script to make asassn.csv ourselves.
 Finish the QR doc/page
 Short screencast: decrease speed of Sabine and JB's sections
 Slides: title/caption can be above or below figures, but do it consistently
+Record example notebook usage (see ~/script.txt)
+Idea: script to download data files from e.g. google drive?
+Thought: Might be better to be able to specify commands rather than just files to be run. Might be worth just using Snakemake rather than extending our own build script for every edge case? Snakemake might also produce a more useful/interactive DAG graph

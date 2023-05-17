@@ -9,7 +9,7 @@ build dag.svg: gengraph build.ninja
 rule build.py
   command = ./build.py
   pool = console
-build build.ninja: build.py ./build.py lib/x.py lib/graph.js
+build build.ninja: build.py ./build.py lib/x.py lib/graph.js dat/config.yml dat/known.json
 
 rule query.py
   command = src/query.py
@@ -45,3 +45,8 @@ rule asassn.py
   command = src/asassn.py
   pool = console
 build img/lightcurves/asassn.png: asassn.py src/asassn.py dat/config.yml dat/asassn.csv dat/known.json dat/period.json
+
+rule screencasts.py
+  command = src/screencasts.py
+  pool = console
+build screencasts/main/out.mp4: screencasts.py src/screencasts.py screencasts/main/sab.mov screencasts/main/elle.mp4 screencasts/main/tm.mov screencasts/main/jb.mp4

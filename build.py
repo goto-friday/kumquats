@@ -9,7 +9,8 @@ known = json.load(open("dat/known.json"))
 b = Builder()
 
 b.add("build.py",
-    inputs = cat('lib/', ['x.py', 'graph.js']),
+    inputs = cat('lib/', ['x.py', 'graph.js']) +
+        cat('dat/', ['config.yml', 'known.json']),
     outputs = ['build.ninja'])
 
 b.add("src/query.py",
@@ -45,5 +46,9 @@ b.add("src/asassn.py",
     inputs = cat('dat/', ['config.yml', 'asassn.csv']) +
         cat('dat/', ['known', 'period'], '.json'),
     outputs = ['img/lightcurves/asassn.png'])
+
+b.add("src/screencasts.py",
+    inputs = cat('screencasts/main/', ['sab.mov', 'elle.mp4', 'tm.mov', 'jb.mp4']),
+    outputs = ['screencasts/main/out.mp4'])
 
 b.write()
