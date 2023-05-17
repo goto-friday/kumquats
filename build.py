@@ -22,8 +22,8 @@ b.add("src/calibrate.py",
     outputs = cat('dat/', config['filters'], '.csv'))
 
 b.add("src/period.py",
-    inputs = cat('dat/', ['config.yml', 'known.json']),
-    outputs = ['dat/period.json', 'img/period.png'])
+    inputs = cat('dat/', ['config.yml', 'known.json', 'asassn.csv']),
+    outputs = ['dat/period.json', 'img/period/asassn.png'])
 
 b.add("src/color_index.py",
     inputs = cat('dat/', ['config.yml', 'known.json']) +
@@ -34,6 +34,11 @@ b.add("src/lightcurves.py",
     inputs = ['dat/config.yml'] +
         cat('dat/', ['known', 'period'], '.json') +
         cat('dat/', config['filters'], '.csv'),
-    outputs = ['img/lightcurve.png'])
+    outputs = ['img/lightcurves/all.png'])
+
+b.add("src/tess.py",
+    inputs = ['dat/config.yml'] +
+        cat('dat/', ['known', 'period'], '.json'),
+    outputs = ['img/lightcurves/tess.png'])
 
 b.write()

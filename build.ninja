@@ -24,7 +24,7 @@ build dat/B.csv dat/V.csv dat/SG.csv dat/SR.csv dat/SI.csv: calibrate.py src/cal
 rule period.py
   command = src/period.py
   pool = console
-build dat/period.json img/period.png: period.py src/period.py dat/config.yml dat/known.json
+build dat/period.json img/period/asassn.png: period.py src/period.py dat/config.yml dat/known.json dat/asassn.csv
 
 rule color_index.py
   command = src/color_index.py
@@ -35,3 +35,8 @@ rule lightcurves.py
   command = src/lightcurves.py
   pool = console
 build img/lightcurve.png: lightcurves.py src/lightcurves.py dat/config.yml dat/known.json dat/period.json dat/B.csv dat/V.csv dat/SG.csv dat/SR.csv dat/SI.csv
+
+rule tess.py
+  command = src/tess.py
+  pool = console
+build img/lightcurves/tess.png: tess.py src/tess.py dat/config.yml dat/known.json dat/period.json

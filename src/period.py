@@ -37,7 +37,7 @@ ax.set_xlabel("Period")
 ax.set_ylabel("Power")
 ax.plot(1/freq, psd)
 ax.text(period+.001, max(psd)-.01, str(round(period, 6)))
-fig.savefig("img/asassn_periodogram.png")
+fig.savefig("img/period/asassn.png")
 open("dat/period.json", 'w').write(json.dumps(dict(period=period)))
 
 """

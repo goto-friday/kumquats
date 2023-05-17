@@ -6,7 +6,6 @@ import math as m
 import itertools as it
 
 import yaml
-import matplotlib as mpl
 import matplotlib.pyplot as plt
 import lightkurve as lk
 
@@ -37,7 +36,7 @@ for i, filt in enumerate(dat):
 
 ax.legend(loc='upper right', ncols=3, bbox_to_anchor=(1, 1, 0, .14),
     borderaxespad=0, fontsize=10)
-fig.savefig("img/lightcurve.png")
+fig.savefig("img/lightcurves/all.png")
 
 exit()
 # TODO move everything below to a new file

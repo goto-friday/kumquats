@@ -9,6 +9,7 @@ pkgs() {
 }
 
 git_hooks() {
+	# TODO get root dir w/ git and use that
 	cp lib/git.hooks.pre-commit .git/hooks/pre-commit
 	chmod 0755 .git/hooks/pre-commit
 }
