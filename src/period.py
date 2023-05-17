@@ -33,6 +33,8 @@ freq, psd = LombScargle(hjd, mag, mag_err, nterms=2).autopower(
 period = 1/freq[np.argmax(psd)]
 
 fig, ax = plt.subplots()
+ax.set_xlabel("Period")
+ax.set_ylabel("Power")
 ax.plot(1/freq, psd)
 ax.text(period+.001, max(psd)-.01, str(round(period, 6)))
 fig.savefig("img/period.png")
