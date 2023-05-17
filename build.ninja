@@ -34,9 +34,14 @@ build img/color_index.png: color_index.py src/color_index.py dat/config.yml dat/
 rule lightcurves.py
   command = src/lightcurves.py
   pool = console
-build img/lightcurve.png: lightcurves.py src/lightcurves.py dat/config.yml dat/known.json dat/period.json dat/B.csv dat/V.csv dat/SG.csv dat/SR.csv dat/SI.csv
+build img/lightcurves/all.png: lightcurves.py src/lightcurves.py dat/config.yml dat/known.json dat/period.json dat/B.csv dat/V.csv dat/SG.csv dat/SR.csv dat/SI.csv
 
 rule tess.py
   command = src/tess.py
   pool = console
 build img/lightcurves/tess.png: tess.py src/tess.py dat/config.yml dat/known.json dat/period.json
+
+rule asassn.py
+  command = src/asassn.py
+  pool = console
+build img/lightcurves/asassn.png: asassn.py src/asassn.py dat/config.yml dat/asassn.csv dat/known.json dat/period.json

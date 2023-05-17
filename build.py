@@ -41,4 +41,9 @@ b.add("src/tess.py",
         cat('dat/', ['known', 'period'], '.json'),
     outputs = ['img/lightcurves/tess.png'])
 
+b.add("src/asassn.py",
+    inputs = cat('dat/', ['config.yml', 'asassn.csv']) +
+        cat('dat/', ['known', 'period'], '.json'),
+    outputs = ['img/lightcurves/asassn.png'])
+
 b.write()
