@@ -1,4 +1,7 @@
 **/__pycache__
+**/*.log
+**/*.aux
+**/*.out
 .ninja_log
 .ninja_deps
 screencasts
