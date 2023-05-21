@@ -4,10 +4,13 @@ Copy Dr. Janzen's script to make asassn.csv ourselves.
 Finish the QR doc/page
 Short screencast: decrease speed of Sabine and JB's sections
 Slides: title/caption can be above or below figures, but do it consistently
-Record example notebook usage (see ~/script.txt)
 Idea: script to download data files from e.g. google drive?
-Thought: Might be better to be able to specify commands rather than just files to be run.
-TODO: Remove popup (title) from dag.svg
+TODO: Remove popup (title) from dag.svg. Idea: create a new element with the title as a value, so the graph.js code still works.
 lib/graph.js: make all non-directly related nodes/edges lighter when a node is clicked (or maybe do this instead of highlighting connected edges?)
 TODO maybe try rewriting some scripts in julia w/ https://cjdoris.github.io/PythonCall.jl/stable/ + PyYAML instead of YAMl.jl
 TODO install ipynb and add JB's code
+TODO do something about large files (for screencasts); e.g. Git LFS
+TODO License
+TODO Codespaces Prebuild conf (see GH repo settings)
+TODO Expect commands in build.py, rather than just files
+TODO Set up GH pages (for QR doc)

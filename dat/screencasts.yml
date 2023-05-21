@@ -1,22 +1,23 @@
 # `times` are times of slide transitions in seconds relative to the local
-# file.
+# file. Files are here: 
+# https://drive.google.com/drive/folders/1ioGTEPTQwm2d9fVeqNZ9zUGcHBJ2mAiR
 
 #aavso:
 main:
-  slides: "https://docs.google.com/presentation/d/1J1h9nrYUWivn98NMY1Sk0-TYHNCOWEcshrMkGGpyQeY"
+  slides: https://docs.google.com/presentation/d/1J1h9nrYUWivn98NMY1Sk0-TYHNCOWEcshrMkGGpyQeY
   sections:
-    - file: elle.mp4
+    - gdrive_id: 1ZS3HsiPujOiIi0NO7Ak6Po58n6QclsRw
       name: Elle Moscinski
       times: [5.3, 26, 38, 55.5, 77, 88]
 
-    - file: sab.mov
+    - gdrive_id: 1H-C2Fmw_r0D0WZZbere3AQjOz94u_JfE
       name: Sabine Mazzeo
       times: [0, 27]
 
-    - file: tm.mov
+    - gdrive_id: 1hy7KQo8twTw73L51zKvqQBPKo_T3dSWH
       name: Tommy Morford
       times: [0, 61, 73]
 
-    - file: jb.mp4
+    - gdrive_id: 1v0W53q1pCqJ6f5JLc17A5eVrQQ-AnRAG
       name: JB Bryant
       times: [0, 16, 31, 72]

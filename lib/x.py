@@ -1,3 +1,4 @@
+import re
 import itertools as it
 import textwrap as tw
 from os import path
@@ -21,22 +22,24 @@ class Builder:
         build dag.svg: gengraph build.ninja lib/graph.js
         """)
 
-    def tmpl(self, arg0, inputs=[], outputs=[],
+    def tmpl(self, cmd, inputs=[], outputs=[],
             ignored_inputs=[], ignored_outputs=[]):
-        inputs.append(arg0)
+        rulename = re.sub('[^\w.]', '.', cmd[0])
+        # TODO do this better (trying to decide if file is in repo)
+        if '/' in cmd[0] and cmd[0][0] != '/':
+            inputs.append(cmd[0])
         return tw.dedent(f"""
-        rule {path.basename(arg0)}
+        rule {rulename}
           command = lib/chk.py '{':'.join(inputs)}' '{':'.join(outputs)}' $
-            '{':'.join(ignored_inputs)}' '{':'.join(ignored_outputs)}' {arg0}
+            '{':'.join(ignored_inputs)}' '{':'.join(ignored_outputs)}' $
+            {' '.join(cmd)}
           pool = console
-        build {' '.join(outputs)}: {path.basename(arg0)} {' '.join(inputs)}
+        build {' '.join(outputs)}: {rulename} {' '.join(inputs)}
         """)
 
-    def add(self, script, inputs=[], outputs=[],
+    def add(self, cmd, inputs=[], outputs=[],
             ignored_inputs=[], ignored_outputs=[]):
-        if '/' not in script:
-            script = './' + script
-        self.ninja_script += self.tmpl(script,
+        self.ninja_script += self.tmpl(cmd,
             inputs=inputs, outputs=outputs,
             ignored_inputs=ignored_inputs, ignored_outputs=ignored_outputs)
 

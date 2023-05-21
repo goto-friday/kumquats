@@ -4,7 +4,6 @@
 #   $ ffmpeg -i INPUT.mp4 -c:v copy OUTPUT.mp4
 
 # TODO use https://github.com/kkroening/ffmpeg-python
-# TODO use tempfile lib?
 
 import os
 import sys

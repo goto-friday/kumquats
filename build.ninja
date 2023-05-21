@@ -6,56 +6,58 @@ rule gengraph
     echo ']]></script></svg>'; } > $out
 build dag.svg: gengraph build.ninja lib/graph.js
 
-rule build.py
+rule ..build.py
   command = lib/chk.py 'lib/x.py:dat/config.yml:dat/known.json:./build.py' 'build.ninja' $
-    '' '' ./build.py
+    '' '' $
+    ./build.py
   pool = console
-build build.ninja: build.py lib/x.py dat/config.yml dat/known.json ./build.py
+build build.ninja: ..build.py lib/x.py dat/config.yml dat/known.json ./build.py
 
-rule query.py
+rule src.query.py
   command = lib/chk.py 'dat/config.yml:src/query.py' 'dat/known.json' $
-    '' '' src/query.py
+    '' '' $
+    src/query.py
   pool = console
-build dat/known.json: query.py dat/config.yml src/query.py
+build dat/known.json: src.query.py dat/config.yml src/query.py
 
-rule calibrate.py
+rule src.calibrate.py
   command = lib/chk.py 'dat/config.yml:dat/known.json:dat/stars.json:dat/period.json:src/calibrate.py' 'dat/B.csv:dat/V.csv:dat/SG.csv:dat/SR.csv:dat/SI.csv' $
-    '' '' src/calibrate.py
+    '' '' $
+    src/calibrate.py
   pool = console
-build dat/B.csv dat/V.csv dat/SG.csv dat/SR.csv dat/SI.csv: calibrate.py dat/config.yml dat/known.json dat/stars.json dat/period.json src/calibrate.py
+build dat/B.csv dat/V.csv dat/SG.csv dat/SR.csv dat/SI.csv: src.calibrate.py dat/config.yml dat/known.json dat/stars.json dat/period.json src/calibrate.py
 
-rule period.py
+rule src.period.py
   command = lib/chk.py 'matplotlibrc:dat/config.yml:dat/known.json:dat/asassn.csv:src/period.py' 'dat/period.json:img/period/asassn.png' $
-    '' '' src/period.py
+    '' '' $
+    src/period.py
   pool = console
-build dat/period.json img/period/asassn.png: period.py matplotlibrc dat/config.yml dat/known.json dat/asassn.csv src/period.py
+build dat/period.json img/period/asassn.png: src.period.py matplotlibrc dat/config.yml dat/known.json dat/asassn.csv src/period.py
 
-rule color_index.py
+rule src.color_index.py
   command = lib/chk.py 'matplotlibrc:dat/config.yml:dat/known.json:dat/B.csv:dat/V.csv:dat/SG.csv:dat/SR.csv:dat/SI.csv:src/color_index.py' 'img/color_index.png' $
-    '' '' src/color_index.py
+    '' '' $
+    src/color_index.py
   pool = console
-build img/color_index.png: color_index.py matplotlibrc dat/config.yml dat/known.json dat/B.csv dat/V.csv dat/SG.csv dat/SR.csv dat/SI.csv src/color_index.py
+build img/color_index.png: src.color_index.py matplotlibrc dat/config.yml dat/known.json dat/B.csv dat/V.csv dat/SG.csv dat/SR.csv dat/SI.csv src/color_index.py
 
-rule lightcurves.py
+rule src.lightcurves.py
   command = lib/chk.py 'matplotlibrc:dat/config.yml:dat/known.json:dat/period.json:dat/B.csv:dat/V.csv:dat/SG.csv:dat/SR.csv:dat/SI.csv:src/lightcurves.py' 'img/lightcurves/all.png' $
-    '' '' src/lightcurves.py
+    '' '' $
+    src/lightcurves.py
   pool = console
-build img/lightcurves/all.png: lightcurves.py matplotlibrc dat/config.yml dat/known.json dat/period.json dat/B.csv dat/V.csv dat/SG.csv dat/SR.csv dat/SI.csv src/lightcurves.py
+build img/lightcurves/all.png: src.lightcurves.py matplotlibrc dat/config.yml dat/known.json dat/period.json dat/B.csv dat/V.csv dat/SG.csv dat/SR.csv dat/SI.csv src/lightcurves.py
 
-rule tess.py
+rule src.tess.py
   command = lib/chk.py 'matplotlibrc:dat/config.yml:dat/known.json:dat/period.json:src/tess.py' 'img/lightcurves/tess.png' $
-    '' '' src/tess.py
+    '' '' $
+    src/tess.py
   pool = console
-build img/lightcurves/tess.png: tess.py matplotlibrc dat/config.yml dat/known.json dat/period.json src/tess.py
+build img/lightcurves/tess.png: src.tess.py matplotlibrc dat/config.yml dat/known.json dat/period.json src/tess.py
 
-rule asassn.py
+rule src.asassn.py
   command = lib/chk.py 'matplotlibrc:dat/config.yml:dat/asassn.csv:dat/known.json:dat/period.json:src/asassn.py' 'img/lightcurves/asassn.png' $
-    '' '' src/asassn.py
+    '' '' $
+    src/asassn.py
   pool = console
-build img/lightcurves/asassn.png: asassn.py matplotlibrc dat/config.yml dat/asassn.csv dat/known.json dat/period.json src/asassn.py
-
-rule screencasts.py
-  command = lib/chk.py 'dat/screencasts.yml:screencasts/main/sab.mov:screencasts/main/tm.mov:screencasts/main/elle.mp4:screencasts/main/jb.mp4:src/screencasts.py' 'screencasts/main/out.mp4' $
-    'screencasts/main/slides/*' 'screencasts/main/slides/*' src/screencasts.py
-  pool = console
-build screencasts/main/out.mp4: screencasts.py dat/screencasts.yml screencasts/main/sab.mov screencasts/main/tm.mov screencasts/main/elle.mp4 screencasts/main/jb.mp4 src/screencasts.py
+build img/lightcurves/asassn.png: src.asassn.py matplotlibrc dat/config.yml dat/asassn.csv dat/known.json dat/period.json src/asassn.py

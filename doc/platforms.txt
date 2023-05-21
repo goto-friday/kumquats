@@ -17,8 +17,7 @@ should work, since we don't rely on the operating system's package manager.
 
 All web-based development platforms of which I am aware (Google Colab,
 Replit, Github Codespaces, etc.) use some version of Ubuntu, and thus
-should work. A Colab notebook interface to the project is provided via
-https://colab.research.google.com/drive/12IUEmgnu3MStbRgnnxSYQXbQcODT01LU.
+should work.
 
 Non-x86_64 platforms will probably work, assuming the requisite packages
 run on them. Brew only supports x86_64, so one would need to modify the
