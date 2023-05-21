@@ -1,0 +1,60 @@
+Except where otherwise noted, this document is written from the perspective
+of Tommy M.
+
+For platforms designated as "supported," the code is very likely to run,
+and if it does not, I will fix it. For other platforms, I cannot guarantee
+that I will be able to help.
+
+
+Linux/Glibc x86_64
+==================
+
+Supported.
+
+This includes (among others) Ubuntu, Debian, and Fedora; most notably, it
+does not include Alpine Linux. Relatively old versions (e.g. Ubuntu 20.04)
+should work, since we don't rely on the operating system's package manager.
+
+All web-based development platforms of which I am aware (Google Colab,
+Replit, Github Codespaces, etc.) use some version of Ubuntu, and thus
+should work. A Colab notebook interface to the project is provided via
+https://colab.research.google.com/drive/12IUEmgnu3MStbRgnnxSYQXbQcODT01LU.
+
+Non-x86_64 platforms will probably work, assuming the requisite packages
+run on them. Brew only supports x86_64, so one would need to modify the
+`pkgs` function of lib/setup.sh.
+
+Musl might or might not work; I've encountered many scientific computing
+packages that are broken on it, so I would not hold much hope of getting
+this to work on Musl. A different package manager would probably also be
+necessary.
+
+
+MacOS x86_64
+============
+
+Only version 11 (Big Sur) is supported, because that's what I own.
+
+Currently the build script for macOS is unfinished. I'll do it when I
+get a chance, unless someone else does first. The Linux build script
+does work (though is as of now untested on Colab).
+
+TODO explain dtrace/root situation
+
+
+Windows
+=======
+
+Unsupported.
+
+I don't own a copy of Windows, and have never used it, so I don't have the
+knowledge to write portable code for it. I would recommend using WSL, a VM,
+or a web-based runtime instead.
+
+
+Other
+=====
+
+The situation on BSD is mostly the same as Linux/Musl; many scientific
+computing packages will cause problems. FreeBSD is probably the most likely
+to work given its Linux emulation facilities.

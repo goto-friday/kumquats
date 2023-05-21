@@ -9,13 +9,8 @@ def cat(*args):
 
 class Builder:
 
-    tmpl = tw.dedent("""
-    rule {0}
-      command = {1}
-      pool = console
-    build {2}: {0} {1} {3}
-    """)
-
+    # TODO move graph generator command into separate script and maybe
+    # generate this rule from build.py
     def __init__(self):
         self.ninja_script = tw.dedent(r"""
         rule gengraph
@@ -23,14 +18,27 @@ class Builder:
             dot -Tdot | gvcolor | dot -Tsvg | sed -n '$$!p'; $
             echo '<script><![CDATA['; cat lib/graph.js; $
             echo ']]></script></svg>'; } > $out
-        build dag.svg: gengraph build.ninja
+        build dag.svg: gengraph build.ninja lib/graph.js
         """)
 
-    def add(self, script, inputs=[], outputs=[]):
+    def tmpl(self, arg0, inputs=[], outputs=[],
+            ignored_inputs=[], ignored_outputs=[]):
+        inputs.append(arg0)
+        return tw.dedent(f"""
+        rule {path.basename(arg0)}
+          command = lib/chk.py '{':'.join(inputs)}' '{':'.join(outputs)}' $
+            '{':'.join(ignored_inputs)}' '{':'.join(ignored_outputs)}' {arg0}
+          pool = console
+        build {' '.join(outputs)}: {path.basename(arg0)} {' '.join(inputs)}
+        """)
+
+    def add(self, script, inputs=[], outputs=[],
+            ignored_inputs=[], ignored_outputs=[]):
         if '/' not in script:
             script = './' + script
-        self.ninja_script += self.tmpl.format(path.basename(script),
-            script, ' '.join(outputs), ' '.join(inputs))
+        self.ninja_script += self.tmpl(script,
+            inputs=inputs, outputs=outputs,
+            ignored_inputs=ignored_inputs, ignored_outputs=ignored_outputs)
 
     def write(self):
         open("build.ninja", 'w').write(self.ninja_script)

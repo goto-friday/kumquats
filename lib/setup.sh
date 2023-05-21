@@ -4,7 +4,11 @@ sys_pkgs="ffmpeg ninja-build texlive graphviz"
 pip_pkgs="matplotlib astropy astroquery lightkurve PyYAML"
 
 pkgs() {
-	apt install $sys_pkgs
+	# TODO figure out the brew/python situation
+	if ! type brew >/dev/null 2>&1; then
+		bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	fi
+	brew install $sys_pkgs
 	pip install $pip_pkgs
 }
 

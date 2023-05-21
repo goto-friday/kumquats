@@ -1,6 +1,7 @@
 dat: Data, for use in scripts
-out: Programmatically-generated data, not intended for scripts
+out: Programmatically-generated data, not intended for input to scripts.
 img: Images
 src: Code
 lib: Helper files, mostly code-related
 https://colab.research.google.com/drive/12IUEmgnu3MStbRgnnxSYQXbQcODT01LU: Notebook to build this repo.
+dag.svg: Build system graph showing relation among code and data. Interactive if opened in a web browser.

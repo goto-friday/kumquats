@@ -1,8 +1,15 @@
-- Manually created files (i.e. those not generated via a script *in this
-  repo*) should be documented in an INDEX file in that file's directory,
-  except in very obvious cases. See dat/INDEX directory for example.
-- Nothing should be hard coded the scripts, and hardcoding data should be
-  avoided as much as possible altogether. Anything that does need to be
-  hardcoded should be in dat/custom.yaml.
-- Target whatever versions of software Colab has. As of 2023-05-14, that
-  is Ubuntu 20.04.5 and Python 3.10.11.
+- Files whose purpose is not obvious from the filename should be documented
+  in an INDEX.txt file in the respective directory. See doc/INDEX.txt for
+  example.
+- Don't hard-code any data into the code; all hard-coded data should go in
+  dat/config.yml.
+- Don't store PDFs of the LaTeX files in the repo; likewise, don't make the
+  build system track LaTeX files.
+- Give text files (such as this one) the '.txt' extension; otherwise
+  Overleaf will be finicky about viewing/editing them.
+- On breaking changes in code (e.g. reformatting a data structure): Tommy's
+  opinion is thus: The ultimate goal is usable code. Usability in this
+  context means that it runs, but also that it can be understood a few
+  months later. Do whatever best promotes that goal; if that means making a
+  breaking change to considerably simplify some code, do it. Just make sure
+  that everything builds before committing.

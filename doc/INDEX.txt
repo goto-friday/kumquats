@@ -1,0 +1,3 @@
+platforms.txt: Notes about running the code on various computers.
+guidelines.txt: Recommended practices (not just for the code).
+calib_mag.txt: Calibrated magnitude derivation/explanation for reference.
