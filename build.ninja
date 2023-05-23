@@ -42,11 +42,11 @@ rule src.color_index.py
 build img/color_index.png: src.color_index.py matplotlibrc dat/config.yml dat/known.json dat/B.csv dat/V.csv dat/SG.csv dat/SR.csv dat/SI.csv src/color_index.py
 
 rule src.lightcurves.py
-  command = lib/chk.py 'matplotlibrc:dat/config.yml:dat/known.json:dat/period.json:dat/B.csv:dat/V.csv:dat/SG.csv:dat/SR.csv:dat/SI.csv:src/lightcurves.py' 'img/lightcurves/all.png' $
+  command = lib/chk.py 'matplotlibrc:dat/config.yml:dat/known.json:dat/period.json:dat/B.csv:dat/V.csv:dat/SG.csv:dat/SR.csv:dat/SI.csv:src/lightcurves.py' 'img/lightcurves/all.png:img/lightcurves/B.png:img/lightcurves/V.png:img/lightcurves/SG.png:img/lightcurves/SR.png:img/lightcurves/SI.png' $
     '' '' $
     src/lightcurves.py
   pool = console
-build img/lightcurves/all.png: src.lightcurves.py matplotlibrc dat/config.yml dat/known.json dat/period.json dat/B.csv dat/V.csv dat/SG.csv dat/SR.csv dat/SI.csv src/lightcurves.py
+build img/lightcurves/all.png img/lightcurves/B.png img/lightcurves/V.png img/lightcurves/SG.png img/lightcurves/SR.png img/lightcurves/SI.png: src.lightcurves.py matplotlibrc dat/config.yml dat/known.json dat/period.json dat/B.csv dat/V.csv dat/SG.csv dat/SR.csv dat/SI.csv src/lightcurves.py
 
 rule src.tess.py
   command = lib/chk.py 'matplotlibrc:dat/config.yml:dat/known.json:dat/period.json:src/tess.py' 'img/lightcurves/tess.png' $

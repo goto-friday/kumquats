@@ -1,7 +1,7 @@
 Rewrite photometry script, use "Comp XX" instead of "compXX" and include filenames, make hjd keys floats rather than strings
 Interactive plotting lib?
-Copy Dr. Janzen's script to make asassn.csv ourselves.
-Finish the QR doc/page
+Find where we got asassn.csv (see https://docs.google.com/document/d/1d9Juse6ypeOUuyw3v1LNPXvEkpuZrROUY4Xb9DPQFJY/edit)
+Finish the QR doc/page (use GH Pages)
 Short screencast: decrease speed of Sabine and JB's sections
 Slides: title/caption can be above or below figures, but do it consistently
 Idea: script to download data files from e.g. google drive?
@@ -14,3 +14,10 @@ License
 Codespaces Prebuild conf (see GH repo settings)
 Set up GH pages (for QR doc)
 Track poster/slides in build system (after porting to LaTeX)
+In the color plot there are no points at phase = 0.3 or 0.7. Why?
+Upload data to webobs
+Noteworthy: big red star in midde(ish) of cluster is too red to be in isochrone (?)
+Check that timestamps work between Overleaf and Git/Github
+Do fancy linking stuff w/ citations and figures in Gdocs
+The light curves seem a lot less clean than the old ones. Why?
+Why does query.py get rebuild so often?

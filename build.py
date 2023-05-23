@@ -38,7 +38,8 @@ b.add(["src/lightcurves.py"],
         ['dat/config.yml'] +
         cat('dat/', ['known', 'period'], '.json') +
         cat('dat/', config['filters'], '.csv'),
-    outputs = ['img/lightcurves/all.png'])
+    outputs = ['img/lightcurves/all.png'] +
+        cat('img/lightcurves/', config['filters'], '.png'))
 
 b.add(["src/tess.py"],
     inputs = ['matplotlibrc'] +
