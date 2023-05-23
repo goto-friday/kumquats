@@ -61,3 +61,10 @@ rule src.asassn.py
     src/asassn.py
   pool = console
 build img/lightcurves/asassn.png: src.asassn.py matplotlibrc dat/config.yml dat/asassn.csv dat/known.json dat/period.json src/asassn.py
+
+rule src.screencasts.py
+  command = lib/chk.py 'dat/screencasts.yml:screencasts/main/sab.mov:screencasts/main/tm.mov:screencasts/main/elle.mp4:screencasts/main/jb.mp4:src/screencasts.py' 'screencasts/main/out.mp4' $
+    'screencasts/main/slides/*' 'screencasts/main/slides/*' $
+    src/screencasts.py
+  pool = console
+build screencasts/main/out.mp4: src.screencasts.py dat/screencasts.yml screencasts/main/sab.mov screencasts/main/tm.mov screencasts/main/elle.mp4 screencasts/main/jb.mp4 src/screencasts.py

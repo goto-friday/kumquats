@@ -53,12 +53,12 @@ b.add(["src/asassn.py"],
         cat('dat/', ['known', 'period'], '.json'),
     outputs = ['img/lightcurves/asassn.png'])
 
-#b.add("src/screencasts.py",
-#    inputs = ['dat/screencasts.yml'] +
-#        cat('screencasts/main/', ['sab', 'tm'], '.mov') +
-#        cat('screencasts/main/', ['elle', 'jb'], '.mp4'),
-#    outputs = ['screencasts/main/out.mp4'],
-#    ignored_inputs = ['screencasts/main/slides/*'],
-#    ignored_outputs = ['screencasts/main/slides/*'])
+b.add(["src/screencasts.py"],
+    inputs = ['dat/screencasts.yml'] +
+        cat('screencasts/main/', ['sab', 'tm'], '.mov') +
+        cat('screencasts/main/', ['elle', 'jb'], '.mp4'),
+    outputs = ['screencasts/main/out.mp4'],
+    ignored_inputs = ['screencasts/main/slides/*'],
+    ignored_outputs = ['screencasts/main/slides/*'])
 
 b.write()

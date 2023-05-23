@@ -6,18 +6,18 @@
 main:
   slides: https://docs.google.com/presentation/d/1J1h9nrYUWivn98NMY1Sk0-TYHNCOWEcshrMkGGpyQeY
   sections:
-    - gdrive_id: 1ZS3HsiPujOiIi0NO7Ak6Po58n6QclsRw
+    - file: elle.mp4
       name: Elle Moscinski
       times: [5.3, 26, 38, 55.5, 77, 88]
 
-    - gdrive_id: 1H-C2Fmw_r0D0WZZbere3AQjOz94u_JfE
+    - file: sab.mov
       name: Sabine Mazzeo
       times: [0, 27]
 
-    - gdrive_id: 1hy7KQo8twTw73L51zKvqQBPKo_T3dSWH
+    - file: tm.mov
       name: Tommy Morford
       times: [0, 61, 73]
 
-    - gdrive_id: 1v0W53q1pCqJ6f5JLc17A5eVrQQ-AnRAG
+    - file: jb.mp4
       name: JB Bryant
       times: [0, 16, 31, 72]
