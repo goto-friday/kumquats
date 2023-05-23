@@ -49,6 +49,7 @@ min_pts = min([d[c]['npts'] for c in d])
 max_pts = max([d[c]['npts'] for c in d])
 
 fig, axs = plt.subplots(1, 2, sharey=True)
+fig.set_figwidth(fig.get_figheight()*2.5)
 axs[0].set_xlabel("Phase")
 axs[0].set_ylabel("Color Index")
 axs[1].set_xlabel("Eclipse")
@@ -76,8 +77,8 @@ for ec in c['eclipses']:
 for i, comb in enumerate(d):
     phases = [x['phase'] for x in d[comb]['pts']]
     indices = [x['cidx'] for x in d[comb]['pts']]
-    axs[1].plot(phases, indices, label=comb, marker = markers[i])
+    axs[1].plot(phases, indices, label=comb, marker=markers[i])
 
 axs[1].legend(fontsize=10, loc='upper right', ncols=4,
     bbox_to_anchor=(1, 1, 0, .14), borderaxespad=0)
-fig.savefig("img/color_index.png")
+fig.savefig("img/color_index.png", bbox_inches='tight')
