@@ -10,17 +10,8 @@ def cat(*args):
 
 class Builder:
 
-    # TODO move graph generator command into separate script and maybe
-    # generate this rule from build.py
     def __init__(self):
-        self.ninja_script = tw.dedent(r"""
-        rule gengraph
-          command = { ninja -t graph | gvpr -i 'N[label!="src/*.py"]' | $
-            dot -Tdot | gvcolor | dot -Tsvg | sed -n '$$!p'; $
-            echo '<script><![CDATA['; cat lib/graph.js; $
-            echo ']]></script></svg>'; } > $out
-        build dag.svg: gengraph build.ninja lib/graph.js
-        """)
+        self.ninja_script = ""
 
     def tmpl(self, cmd, inputs=[], outputs=[],
             ignored_inputs=[], ignored_outputs=[]):

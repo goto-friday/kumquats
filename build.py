@@ -8,6 +8,10 @@ config = yaml.load(open("dat/config.yml"), Loader=yaml.Loader)
 known = json.load(open("dat/known.json"))
 b = Builder()
 
+b.add(["lib/gengraph.py"],
+    inputs = ['build.ninja'] + ['lib/graph.js'],
+    outputs = ['dag.svg'])
+
 b.add(["./build.py"],
     inputs = ['lib/x.py'] +
         cat('dat/', ['config.yml', 'known.json']),

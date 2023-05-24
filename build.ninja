@@ -1,10 +1,10 @@
 
-rule gengraph
-  command = { ninja -t graph | gvpr -i 'N[label!="src/*.py"]' | $
-    dot -Tdot | gvcolor | dot -Tsvg | sed -n '$$!p'; $
-    echo '<script><![CDATA['; cat lib/graph.js; $
-    echo ']]></script></svg>'; } > $out
-build dag.svg: gengraph build.ninja lib/graph.js
+rule lib.gengraph.py
+  command = lib/chk.py 'build.ninja:lib/graph.js:lib/gengraph.py' 'dag.svg' $
+    '' '' $
+    lib/gengraph.py
+  pool = console
+build dag.svg: lib.gengraph.py build.ninja lib/graph.js lib/gengraph.py
 
 rule ..build.py
   command = lib/chk.py 'lib/x.py:dat/config.yml:dat/known.json:./build.py' 'build.ninja' $
