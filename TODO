@@ -1,21 +1,17 @@
 Rewrite photometry script, use "Comp XX" instead of "compXX" and include filenames, make hjd keys floats rather than strings
 Interactive plotting lib?
-Find where we got asassn.csv (see https://docs.google.com/document/d/1d9Juse6ypeOUuyw3v1LNPXvEkpuZrROUY4Xb9DPQFJY/edit)
-Finish the QR doc/page (use GH Pages)
 Short screencast: decrease speed of Sabine and JB's sections
 Slides: title/caption can be above or below figures, but do it consistently
 Idea: script to download data files from e.g. google drive?
-Maybe try rewriting some scripts in julia w/ https://cjdoris.github.io/PythonCall.jl/stable/ + PyYAML instead of YAMl.jl
 Install ipynb and add JB's code
-License
 Codespaces Prebuild conf (see GH repo settings)
-Set up GH pages (for QR doc)
+Set up GH pages and finish QR page
 Track poster/slides in build system (after porting to LaTeX)
 In the color plot there are no points at phase = 0.3 or 0.7. Why?
 Upload data to webobs
 Noteworthy: big red star in midde(ish) of cluster is too red to be in isochrone (?)
 Check that timestamps work between Overleaf and Git/Github
 The light curves seem a lot less clean than the old ones. Why?
-Experiment with larger font sizes
+Experiment with larger font sizes in plots
 Figure out what the extra calculations in Dr. Janzen's ASASSN notebook are doing, since my code doesn't have them
 FIXME: the js doesn't work in GH's "raw" view of dag.svg
