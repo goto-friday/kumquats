@@ -15,3 +15,6 @@ The light curves seem a lot less clean than the old ones. Why?
 Experiment with larger font sizes in plots
 Figure out what the extra calculations in Dr. Janzen's ASASSN notebook are doing, since my code doesn't have them
 FIXME: the js doesn't work in GH's "raw" view of dag.svg
+Figure out the logic for when query.py gets rerun
+`git lfs install` in lib/setup.sh?
+Remove setup script, replace with something codespaces-specific (maybe?), and provide instructions on what packages to install (or maybe not, after all we do still need a setup script for git stuff)

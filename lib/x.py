@@ -15,7 +15,8 @@ class Builder:
 
     def tmpl(self, cmd, inputs=[], outputs=[],
             ignored_inputs=[], ignored_outputs=[]):
-        rulename = re.sub('[^\w.]', '.', cmd[0])
+        # TODO do this better (maybe don't make a rule per command)
+        rulename = re.sub('[^\w.]', '.', '.'.join(cmd))
         # TODO do this better (trying to decide if file is in repo)
         if '/' in cmd[0] and cmd[0][0] != '/':
             inputs.append(cmd[0])

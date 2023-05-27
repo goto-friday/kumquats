@@ -96,7 +96,9 @@ cmd = sys.argv[5:]
 if sys.platform == 'linux':
     inputs, outputs, inouts = do_cmd_linux(cmd)
 elif sys.platform == 'darwin':
-    inputs, outputs, inouts = do_cmd_mac(cmd)
+    sp.run(cmd, check=True)
+    exit()
+    #inputs, outputs, inouts = do_cmd_mac(cmd)
 else:
     exit(f"Unsupported platform '{sys.platform}'")
 

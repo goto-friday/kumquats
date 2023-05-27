@@ -62,9 +62,16 @@ rule src.asassn.py
   pool = console
 build img/lightcurves/asassn.png: src.asassn.py matplotlibrc dat/config.yml dat/asassn.csv dat/known.json dat/period.json src/asassn.py
 
-rule src.screencasts.py
-  command = lib/chk.py 'dat/screencasts.yml:screencasts/main/sab.mov:screencasts/main/tm.mov:screencasts/main/elle.mp4:screencasts/main/jb.mp4:src/screencasts.py' 'screencasts/main/out.mp4' $
+rule src.screencast.py.main
+  command = lib/chk.py 'screencasts/main.yml:screencasts/main/sab.mov:screencasts/main/tm.mov:screencasts/main/jb.mp4:screencasts/main/elle.mp4:src/screencast.py' 'screencasts/main/out.mp4' $
     'screencasts/main/slides/*' 'screencasts/main/slides/*' $
-    src/screencasts.py
+    src/screencast.py main
   pool = console
-build screencasts/main/out.mp4: src.screencasts.py dat/screencasts.yml screencasts/main/sab.mov screencasts/main/tm.mov screencasts/main/elle.mp4 screencasts/main/jb.mp4 src/screencasts.py
+build screencasts/main/out.mp4: src.screencast.py.main screencasts/main.yml screencasts/main/sab.mov screencasts/main/tm.mov screencasts/main/jb.mp4 screencasts/main/elle.mp4 src/screencast.py
+
+rule src.screencast.py.aavso
+  command = lib/chk.py 'screencasts/aavso.yml:screencasts/aavso/intro.mov:screencasts/aavso/end.mov:screencasts/aavso/sab.mov:screencasts/aavso/tm.mp4:screencasts/aavso/jb.mp4:screencasts/aavso/elle.mp4:src/screencast.py' 'screencasts/aavso/out.mp4' $
+    'screencasts/aavso/slides/*' 'screencasts/aavso/slides/*' $
+    src/screencast.py aavso
+  pool = console
+build screencasts/aavso/out.mp4: src.screencast.py.aavso screencasts/aavso.yml screencasts/aavso/intro.mov screencasts/aavso/end.mov screencasts/aavso/sab.mov screencasts/aavso/tm.mp4 screencasts/aavso/jb.mp4 screencasts/aavso/elle.mp4 src/screencast.py
