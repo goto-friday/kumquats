@@ -1,7 +1,6 @@
 import re
 import itertools as it
 import textwrap as tw
-from os import path
 
 # cat('A', ['B', 'C'], 'D') == ['ABD', 'ACD']
 def cat(*args):
@@ -20,10 +19,16 @@ class Builder:
         # TODO do this better (trying to decide if file is in repo)
         if '/' in cmd[0] and cmd[0][0] != '/':
             inputs.append(cmd[0])
+        # XXX can we just use ninja's $in and $out vars? the potential issue
+        # is that that uses whitespace as a delimiter rather than :, which
+        # could break filenames. then again, maybe : is equally likely to
+        # cause such problems? and it would be sensible anyway to just
+        # disallow spaces in filenames as a policy.
+        # Actually, spaces will cause problems anyway b/c of the 'build' line
         return tw.dedent(f"""
         rule {rulename}
-          command = lib/chk.py '{':'.join(inputs)}' '{':'.join(outputs)}' $
-            '{':'.join(ignored_inputs)}' '{':'.join(ignored_outputs)}' $
+          command = lib/chk.py "$in" "$out" $
+            '{' '.join(ignored_inputs)}' '{' '.join(ignored_outputs)}' $
             {' '.join(cmd)}
           pool = console
         build {' '.join(outputs)}: {rulename} {' '.join(inputs)}

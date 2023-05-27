@@ -74,7 +74,7 @@ def do_cmd_linux(c):
         if not is_proj_file(file):
             continue
 
-        if "O_RDONLY" in flags or "O_EXEC" in flags and file not in inputs:
+        if ("O_RDONLY" in flags or "O_EXEC" in flags) and file not in inputs:
             if file not in inputs:
                 inputs.append(file)
         elif "O_WRONLY" in flags and file not in outputs:
@@ -89,7 +89,7 @@ def do_cmd_linux(c):
 
 
 if len(sys.argv) < 6:
-    exit("usage: lib/chk.py inputs outputs cmd")
+    exit("usage: lib/chk.py inputs outputs ignored_inputs ignored_outputs cmd...")
 
 cmd = sys.argv[5:]
 
@@ -104,10 +104,10 @@ else:
 
 # TODO abstract the below into fn
 
-user_inputs = [Path(f).resolve() for f in sys.argv[1].split(':')]
-user_outputs = [Path(f).resolve() for f in sys.argv[2].split(':')]
-ignored_inputs = [p for p in sys.argv[3].split(':')]
-ignored_outputs = [p for p in sys.argv[4].split(':')]
+user_inputs = [Path(f).resolve() for f in sys.argv[1].split()]
+user_outputs = [Path(f).resolve() for f in sys.argv[2].split()]
+ignored_inputs = [p for p in sys.argv[3].split()]
+ignored_outputs = [p for p in sys.argv[4].split()]
 
 if ignored_inputs == ['']: ignored_inputs = []
 if ignored_outputs == ['']: ignored_outputs = []
