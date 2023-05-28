@@ -1,586 +1,448 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1400pt" height="1150pt" viewBox="0.00 0.00 1400.00 1150.14">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1146.14)">
-<polygon fill="white" stroke="none" points="-4,4 -4,-1146.14 1396,-1146.14 1396,4 -4,4" />
+<svg xmlns="http://www.w3.org/2000/svg" width="1238pt" height="778pt" viewBox="0.00 0.00 1238.00 777.51">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 773.51)">
+<polygon fill="white" stroke="none" points="-4,4 -4,-773.51 1234,-773.51 1234,4 -4,4" />
 
-<g id="node1" class="node" x-title="0x7f81fe406010">
-<polygon fill="lightgrey" stroke="black" points="1038,-733.14 984,-733.14 984,-714.14 1038,-714.14 1038,-733.14" />
-<text text-anchor="middle" x="1011" y="-721.14" font-family="Times,serif" font-size="10.00">dag.svg</text>
+<g id="node1" class="node" x-title="0x7f8ff5406060">
+<polygon fill="lightgrey" stroke="black" points="876,-730.51 822,-730.51 822,-711.51 876,-711.51 876,-730.51" />
+<text text-anchor="middle" x="849" y="-718.51" font-family="Times,serif" font-size="10.00">dag.svg</text>
 </g>
 
-<g id="node2" class="node" x-title="0x7f81fe405f80">
-<ellipse fill="lightgrey" stroke="black" cx="853.5" cy="-723.64" rx="57.5" ry="13.5" />
-<text text-anchor="middle" x="853.5" y="-721.14" font-family="Times,serif" font-size="10.00">lib.gengraph.py</text>
+<g id="node2" class="node" x-title="0x7f8ff5405fd0">
+<ellipse fill="lightgrey" stroke="black" cx="691.5" cy="-721.01" rx="57.5" ry="13.5" />
+<text text-anchor="middle" x="691.5" y="-718.51" font-family="Times,serif" font-size="10.00">lib.gengraph.py</text>
 </g>
 
-<g id="edge1" class="edge" x-title="0x7f81fe405f80-&gt;0x7f81fe406010">
-<path fill="none" stroke="black" d="M911.08,-723.64C931.45,-723.64 953.92,-723.64 972.29,-723.64" />
-<polygon fill="black" stroke="black" points="972.2,-727.14 982.2,-723.64 972.2,-720.14 972.2,-727.14" />
+<g id="edge1" class="edge" x-title="0x7f8ff5405fd0-&gt;0x7f8ff5406060">
+<path fill="none" stroke="black" d="M749.08,-721.01C769.45,-721.01 791.92,-721.01 810.29,-721.01" />
+<polygon fill="black" stroke="black" points="810.2,-724.51 820.2,-721.01 810.2,-717.51 810.2,-724.51" />
 </g>
 
-<g id="node3" class="node" x-title="0x7f81fe406080">
-<polygon fill="lightgrey" stroke="black" points="737,-770.14 675,-770.14 675,-751.14 737,-751.14 737,-770.14" />
-<text text-anchor="middle" x="706" y="-758.14" font-family="Times,serif" font-size="10.00">build.ninja</text>
+<g id="node3" class="node" x-title="0x7f8ff54060d0">
+<polygon fill="lightgrey" stroke="black" points="575,-767.51 513,-767.51 513,-748.51 575,-748.51 575,-767.51" />
+<text text-anchor="middle" x="544" y="-755.51" font-family="Times,serif" font-size="10.00">build.ninja</text>
 </g>
 
-<g id="edge2" class="edge" x-title="0x7f81fe406080-&gt;0x7f81fe405f80">
-<path fill="none" stroke="black" d="M737.15,-752.97C759.21,-747.37 789.33,-739.7 813.26,-733.62" />
+<g id="edge2" class="edge" x-title="0x7f8ff54060d0-&gt;0x7f8ff5405fd0">
+<path fill="none" stroke="black" d="M575.15,-750.34C597.21,-744.73 627.33,-737.07 651.26,-730.98" />
 </g>
 
-<g id="node4" class="node" x-title="0x7f81fe406120">
-<polygon fill="lightgrey" stroke="black" points="737.5,-733.14 674.5,-733.14 674.5,-714.14 737.5,-714.14 737.5,-733.14" />
-<text text-anchor="middle" x="706" y="-721.14" font-family="Times,serif" font-size="10.00">lib/graph.js</text>
+<g id="node4" class="node" x-title="0x7f8ff5406170">
+<polygon fill="lightgrey" stroke="black" points="575.5,-730.51 512.5,-730.51 512.5,-711.51 575.5,-711.51 575.5,-730.51" />
+<text text-anchor="middle" x="544" y="-718.51" font-family="Times,serif" font-size="10.00">lib/graph.js</text>
 </g>
 
-<g id="edge3" class="edge" x-title="0x7f81fe406120-&gt;0x7f81fe405f80">
-<path fill="none" stroke="black" d="M737.86,-723.64C754.62,-723.64 775.89,-723.64 795.55,-723.64" />
+<g id="edge3" class="edge" x-title="0x7f8ff5406170-&gt;0x7f8ff5405fd0">
+<path fill="none" stroke="black" d="M575.86,-721.01C592.62,-721.01 613.89,-721.01 633.55,-721.01" />
 </g>
 
-<g id="node5" class="node" x-title="0x7f81fe4061f0">
-<polygon fill="lightgrey" stroke="black" points="747,-696.14 665,-696.14 665,-677.14 747,-677.14 747,-696.14" />
-<text text-anchor="middle" x="706" y="-684.14" font-family="Times,serif" font-size="10.00">lib/gengraph.py</text>
+<g id="node5" class="node" x-title="0x7f8ff5406240">
+<polygon fill="lightgrey" stroke="black" points="585,-693.51 503,-693.51 503,-674.51 585,-674.51 585,-693.51" />
+<text text-anchor="middle" x="544" y="-681.51" font-family="Times,serif" font-size="10.00">lib/gengraph.py</text>
 </g>
 
-<g id="edge4" class="edge" x-title="0x7f81fe4061f0-&gt;0x7f81fe405f80">
-<path fill="none" stroke="black" d="M745.99,-696.56C766.78,-701.84 792.3,-708.33 813.15,-713.63" />
+<g id="edge4" class="edge" x-title="0x7f8ff5406240-&gt;0x7f8ff5405fd0">
+<path fill="none" stroke="black" d="M583.99,-693.92C604.78,-699.21 630.3,-705.7 651.15,-711" />
 </g>
 
-<g id="node6" class="node" x-title="0x7f81fe4065a0">
-<ellipse fill="lightgrey" stroke="black" cx="567" cy="-724.64" rx="39.5" ry="13.5" />
-<text text-anchor="middle" x="567" y="-722.14" font-family="Times,serif" font-size="10.00">..build.py</text>
+<g id="node6" class="node" x-title="0x7f8ff5604450">
+<ellipse fill="lightgrey" stroke="black" cx="405" cy="-722.01" rx="39.5" ry="13.5" />
+<text text-anchor="middle" x="405" y="-719.51" font-family="Times,serif" font-size="10.00">..build.py</text>
 </g>
 
-<g id="edge5" class="edge" x-title="0x7f81fe4065a0-&gt;0x7f81fe406080">
-<path fill="none" stroke="black" d="M599.09,-732.81C618.14,-737.82 642.76,-744.29 663.47,-749.73" />
-<polygon fill="black" stroke="black" points="662.48,-753.09 673.04,-752.24 664.26,-746.32 662.48,-753.09" />
+<g id="edge5" class="edge" x-title="0x7f8ff5604450-&gt;0x7f8ff54060d0">
+<path fill="none" stroke="black" d="M437.09,-730.18C456.14,-735.18 480.76,-741.65 501.47,-747.09" />
+<polygon fill="black" stroke="black" points="500.48,-750.45 511.04,-749.61 502.26,-743.68 500.48,-750.45" />
 </g>
 
-<g id="node7" class="node" x-title="0x7f81fe406630">
-<polygon fill="lightgrey" stroke="black" points="446.5,-772.14 392.5,-772.14 392.5,-753.14 446.5,-753.14 446.5,-772.14" />
-<text text-anchor="middle" x="419.5" y="-760.14" font-family="Times,serif" font-size="10.00">lib/x.py</text>
+<g id="node7" class="node" x-title="0x7f8ff56044e0">
+<polygon fill="lightgrey" stroke="black" points="307,-769.51 253,-769.51 253,-750.51 307,-750.51 307,-769.51" />
+<text text-anchor="middle" x="280" y="-757.51" font-family="Times,serif" font-size="10.00">lib/x.py</text>
 </g>
 
-<g id="edge6" class="edge" x-title="0x7f81fe406630-&gt;0x7f81fe4065a0">
-<path fill="none" stroke="black" d="M446.85,-755.76C471.58,-749.3 508.59,-739.63 534.79,-732.79" />
+<g id="edge6" class="edge" x-title="0x7f8ff56044e0-&gt;0x7f8ff5604450">
+<path fill="none" stroke="black" d="M307.39,-751.85C327.15,-745.75 354.19,-737.39 374.64,-731.08" />
 </g>
 
-<g id="node8" class="node" x-title="0x7f81fe4066a0">
-<polygon fill="lightgrey" stroke="black" points="103.5,-394.14 27.5,-394.14 27.5,-375.14 103.5,-375.14 103.5,-394.14" />
-<text text-anchor="middle" x="65.5" y="-382.14" font-family="Times,serif" font-size="10.00">dat/config.yml</text>
+<g id="node8" class="node" x-title="0x7f8ff5604560">
+<polygon fill="lightgrey" stroke="black" points="76,-408.51 0,-408.51 0,-389.51 76,-389.51 76,-408.51" />
+<text text-anchor="middle" x="38" y="-396.51" font-family="Times,serif" font-size="10.00">dat/config.yml</text>
 </g>
 
-<g id="edge7" class="edge" x-title="0x7f81fe4066a0-&gt;0x7f81fe4065a0">
-<path fill="none" stroke="black" d="M66.84,-394.61C68.8,-434.99 81.79,-587.79 167,-662.64 271.68,-754.59 454.32,-741.14 530.77,-730.52" />
+<g id="edge7" class="edge" x-title="0x7f8ff5604560-&gt;0x7f8ff5604450">
+<path fill="none" stroke="black" d="M38.69,-408.84C38.05,-446.77 40.87,-585.13 112,-660.01 178.92,-730.46 304.46,-730.97 366.84,-726.2" />
 </g>
 
-<g id="node9" class="node" x-title="0x7f81fe406b10">
-<ellipse fill="lightgrey" stroke="black" cx="244" cy="-422.64" rx="46" ry="13.5" />
-<text text-anchor="middle" x="244" y="-420.14" font-family="Times,serif" font-size="10.00">src.query.py</text>
+<g id="node9" class="node" x-title="0x7f8ff5604a40">
+<ellipse fill="lightgrey" stroke="black" cx="158" cy="-414.01" rx="46" ry="13.5" />
+<text text-anchor="middle" x="158" y="-411.51" font-family="Times,serif" font-size="10.00">src.query.py</text>
 </g>
 
-<g id="edge8" class="edge" x-title="0x7f81fe4066a0-&gt;0x7f81fe406b10">
-<path fill="none" stroke="black" d="M103.93,-392.7C133.98,-399.17 175.97,-408.21 205.93,-414.66" />
+<g id="edge8" class="edge" x-title="0x7f8ff5604560-&gt;0x7f8ff5604a40">
+<path fill="none" stroke="black" d="M76.34,-403.75C88.76,-405.33 102.67,-407.1 115.4,-408.72" />
 </g>
 
-<g id="node10" class="node" x-title="0x7f81fe407860">
-<ellipse fill="lightgrey" stroke="black" cx="567" cy="-196.64" rx="49" ry="13.5" />
-<text text-anchor="middle" x="567" y="-194.14" font-family="Times,serif" font-size="10.00">src.period.py</text>
+<g id="node10" class="node" x-title="0x7f8ff56055b0">
+<ellipse fill="lightgrey" stroke="black" cx="405" cy="-194.01" rx="49" ry="13.5" />
+<text text-anchor="middle" x="405" y="-191.51" font-family="Times,serif" font-size="10.00">src.period.py</text>
 </g>
 
-<g id="edge9" class="edge" x-title="0x7f81fe4066a0-&gt;0x7f81fe407860">
-<path fill="none" stroke="black" d="M82.79,-374.78C102.32,-363.21 136.28,-343.94 167,-330.64 297.77,-274.04 460.82,-225.92 531.11,-206.2" />
+<g id="edge9" class="edge" x-title="0x7f8ff5604560-&gt;0x7f8ff56055b0">
+<path fill="none" stroke="black" d="M47.12,-389.2C59.76,-374.41 85.46,-346.2 112,-328.01 198.95,-268.41 316.67,-223.77 372.33,-204.49" />
 </g>
 
-<g id="node11" class="node" x-title="0x7f81fe407de0">
-<ellipse fill="lightgrey" stroke="black" cx="1176" cy="-487.64" rx="65" ry="13.5" />
-<text text-anchor="middle" x="1176" y="-485.14" font-family="Times,serif" font-size="10.00">src.color_index.py</text>
+<g id="node11" class="node" x-title="0x7f8ff5704120">
+<ellipse fill="lightgrey" stroke="black" cx="1014" cy="-485.01" rx="65" ry="13.5" />
+<text text-anchor="middle" x="1014" y="-482.51" font-family="Times,serif" font-size="10.00">src.color_index.py</text>
 </g>
 
-<g id="edge10" class="edge" x-title="0x7f81fe4066a0-&gt;0x7f81fe407de0">
-<path fill="none" stroke="black" d="M69.49,-394.51C78.86,-423.86 110.48,-511.49 167,-558.64 258.16,-634.7 299.78,-648.64 418.5,-648.64 418.5,-648.64 418.5,-648.64 854.5,-648.64 957.73,-648.64 985.45,-627 1075,-575.64 1110.91,-555.05 1145.49,-520.23 1163.05,-501.15" />
+<g id="edge10" class="edge" x-title="0x7f8ff5604560-&gt;0x7f8ff5704120">
+<path fill="none" stroke="black" d="M40.75,-408.62C46.29,-436.45 65.83,-518.21 112,-566.01 169.18,-625.2 196.7,-646.01 279,-646.01 279,-646.01 279,-646.01 692.5,-646.01 795.73,-646.01 823.45,-624.36 913,-573.01 948.91,-552.41 983.49,-517.6 1001.05,-498.51" />
 </g>
 
-<g id="node12" class="node" x-title="0x7f81fe4071e0">
-<ellipse fill="lightgrey" stroke="black" cx="853.5" cy="-458.64" rx="55" ry="13.5" />
-<text text-anchor="middle" x="853.5" y="-456.14" font-family="Times,serif" font-size="10.00">src.calibrate.py</text>
+<g id="node12" class="node" x-title="0x7f8ff5604f20">
+<ellipse fill="lightgrey" stroke="black" cx="691.5" cy="-456.01" rx="55" ry="13.5" />
+<text text-anchor="middle" x="691.5" y="-453.51" font-family="Times,serif" font-size="10.00">src.calibrate.py</text>
 </g>
 
-<g id="edge11" class="edge" x-title="0x7f81fe4066a0-&gt;0x7f81fe4071e0">
-<path fill="none" stroke="black" d="M74,-394.35C108.33,-437.61 255.83,-610.64 418.5,-610.64 418.5,-610.64 418.5,-610.64 568,-610.64 685.04,-610.64 800.6,-509.33 839.09,-472.13" />
+<g id="edge11" class="edge" x-title="0x7f8ff5604560-&gt;0x7f8ff5604f20">
+<path fill="none" stroke="black" d="M43.94,-408.81C65.53,-450.13 156.07,-608.01 279,-608.01 279,-608.01 279,-608.01 406,-608.01 523.04,-608.01 638.6,-506.7 677.09,-469.5" />
 </g>
 
-<g id="node13" class="node" x-title="0x7f81fe408630">
-<ellipse fill="lightgrey" stroke="black" cx="1176" cy="-348.64" rx="63" ry="13.5" />
-<text text-anchor="middle" x="1176" y="-346.14" font-family="Times,serif" font-size="10.00">src.lightcurves.py</text>
+<g id="node13" class="node" x-title="0x7f8ff5704990">
+<ellipse fill="lightgrey" stroke="black" cx="1014" cy="-346.01" rx="63" ry="13.5" />
+<text text-anchor="middle" x="1014" y="-343.51" font-family="Times,serif" font-size="10.00">src.lightcurves.py</text>
 </g>
 
-<g id="edge12" class="edge" x-title="0x7f81fe4066a0-&gt;0x7f81fe408630">
-<path fill="none" stroke="black" d="M66.29,-374.93C65.89,-331.14 70.32,-150.4 167,-60.64 251.06,17.41 303.79,-2.64 418.5,-2.64 418.5,-2.64 418.5,-2.64 854.5,-2.64 960.52,-2.64 1000.7,-18.02 1075,-93.64 1145.49,-165.38 1167.76,-292.64 1173.38,-334.71" />
+<g id="edge12" class="edge" x-title="0x7f8ff5604560-&gt;0x7f8ff5704990">
+<path fill="none" stroke="black" d="M39.83,-389.22C44.25,-339 66.65,-110.58 112,-59.01 163.98,0.1 200.28,-0.01 279,-0.01 279,-0.01 279,-0.01 692.5,-0.01 798.52,-0.01 838.7,-15.38 913,-91.01 983.49,-162.75 1005.76,-290 1011.38,-332.07" />
 </g>
 
-<g id="node14" class="node" x-title="0x7f81fe408120">
-<ellipse fill="lightgrey" stroke="black" cx="853.5" cy="-306.64" rx="41" ry="13.5" />
-<text text-anchor="middle" x="853.5" y="-304.14" font-family="Times,serif" font-size="10.00">src.tess.py</text>
+<g id="node14" class="node" x-title="0x7f8ff5704bc0">
+<ellipse fill="lightgrey" stroke="black" cx="691.5" cy="-304.01" rx="41" ry="13.5" />
+<text text-anchor="middle" x="691.5" y="-301.51" font-family="Times,serif" font-size="10.00">src.tess.py</text>
 </g>
 
-<g id="edge13" class="edge" x-title="0x7f81fe4066a0-&gt;0x7f81fe408120">
-<path fill="none" stroke="black" d="M103.85,-377.58C167.96,-366.1 303.18,-344.64 418.5,-344.64 418.5,-344.64 418.5,-344.64 568,-344.64 659.19,-344.64 765.39,-325.22 818.54,-314.15" />
+<g id="edge13" class="edge" x-title="0x7f8ff5604560-&gt;0x7f8ff5704bc0">
+<path fill="none" stroke="black" d="M63.76,-389.08C106.79,-372.75 198.49,-342.01 279,-342.01 279,-342.01 279,-342.01 406,-342.01 497.19,-342.01 603.39,-322.59 656.54,-311.51" />
 </g>
 
-<g id="node15" class="node" x-title="0x7f81fe409280">
-<ellipse fill="lightgrey" stroke="black" cx="853.5" cy="-112.64" rx="48" ry="13.5" />
-<text text-anchor="middle" x="853.5" y="-110.14" font-family="Times,serif" font-size="10.00">src.asassn.py</text>
+<g id="node15" class="node" x-title="0x7f8ff5705660">
+<ellipse fill="lightgrey" stroke="black" cx="691.5" cy="-110.01" rx="48" ry="13.5" />
+<text text-anchor="middle" x="691.5" y="-107.51" font-family="Times,serif" font-size="10.00">src.asassn.py</text>
 </g>
 
-<g id="edge14" class="edge" x-title="0x7f81fe4066a0-&gt;0x7f81fe409280">
-<path fill="none" stroke="black" d="M70.57,-374.72C94.45,-318.31 221.97,-40.64 418.5,-40.64 418.5,-40.64 418.5,-40.64 568,-40.64 665.57,-40.64 776.36,-80.93 826,-101.23" />
+<g id="edge14" class="edge" x-title="0x7f8ff5604560-&gt;0x7f8ff5705660">
+<path fill="none" stroke="black" d="M40.45,-389.35C49.63,-331.94 105.15,-38.01 279,-38.01 279,-38.01 279,-38.01 406,-38.01 503.57,-38.01 614.36,-78.3 664,-98.6" />
 </g>
 
-<g id="node16" class="node" x-title="0x7f81fe4067a0">
-<polygon fill="lightgrey" stroke="black" points="459.5,-449.14 379.5,-449.14 379.5,-430.14 459.5,-430.14 459.5,-449.14" />
-<text text-anchor="middle" x="419.5" y="-437.14" font-family="Times,serif" font-size="10.00">dat/known.json</text>
+<g id="node16" class="node" x-title="0x7f8ff5604670">
+<polygon fill="lightgrey" stroke="black" points="320,-451.51 240,-451.51 240,-432.51 320,-432.51 320,-451.51" />
+<text text-anchor="middle" x="280" y="-439.51" font-family="Times,serif" font-size="10.00">dat/known.json</text>
 </g>
 
-<g id="edge15" class="edge" x-title="0x7f81fe406b10-&gt;0x7f81fe4067a0">
-<path fill="none" stroke="black" d="M287.89,-426.84C312.08,-429.21 342.45,-432.19 367.81,-434.67" />
-<polygon fill="black" stroke="black" points="367.27,-438.14 377.57,-435.63 367.96,-431.17 367.27,-438.14" />
+<g id="edge15" class="edge" x-title="0x7f8ff5604a40-&gt;0x7f8ff5604670">
+<path fill="none" stroke="black" d="M195,-422.41C205.57,-424.87 217.32,-427.61 228.6,-430.25" />
+<polygon fill="black" stroke="black" points="227.66,-433.62 238.2,-432.49 229.25,-426.81 227.66,-433.62" />
 </g>
 
-<g id="node17" class="node" x-title="0x7f81fe407a10">
-<polygon fill="lightgrey" stroke="black" points="760,-202.14 652,-202.14 652,-183.14 760,-183.14 760,-202.14" />
-<text text-anchor="middle" x="706" y="-190.14" font-family="Times,serif" font-size="10.00">img/period/asassn.png</text>
+<g id="node17" class="node" x-title="0x7f8ff56057a0">
+<polygon fill="lightgrey" stroke="black" points="598,-199.51 490,-199.51 490,-180.51 598,-180.51 598,-199.51" />
+<text text-anchor="middle" x="544" y="-187.51" font-family="Times,serif" font-size="10.00">img/period/asassn.png</text>
 </g>
 
-<g id="edge16" class="edge" x-title="0x7f81fe407860-&gt;0x7f81fe407a10">
-<path fill="none" stroke="black" d="M615.92,-195.24C623.78,-195.01 632.05,-194.77 640.24,-194.53" />
-<polygon fill="black" stroke="black" points="640.33,-198.03 650.22,-194.24 640.12,-191.03 640.33,-198.03" />
+<g id="edge16" class="edge" x-title="0x7f8ff56055b0-&gt;0x7f8ff56057a0">
+<path fill="none" stroke="black" d="M453.92,-192.61C461.78,-192.38 470.05,-192.14 478.24,-191.9" />
+<polygon fill="black" stroke="black" points="478.33,-195.4 488.22,-191.61 478.12,-188.4 478.33,-195.4" />
 </g>
 
-<g id="node18" class="node" x-title="0x7f81fe407680">
-<polygon fill="lightgrey" stroke="black" points="745,-278.14 667,-278.14 667,-259.14 745,-259.14 745,-278.14" />
-<text text-anchor="middle" x="706" y="-266.14" font-family="Times,serif" font-size="10.00">dat/period.json</text>
+<g id="node18" class="node" x-title="0x7f8ff5605400">
+<polygon fill="lightgrey" stroke="black" points="583,-275.51 505,-275.51 505,-256.51 583,-256.51 583,-275.51" />
+<text text-anchor="middle" x="544" y="-263.51" font-family="Times,serif" font-size="10.00">dat/period.json</text>
 </g>
 
-<g id="edge17" class="edge" x-title="0x7f81fe407860-&gt;0x7f81fe407680">
-<path fill="none" stroke="black" d="M590.93,-208.69C614.26,-220.95 650.49,-239.99 675.84,-253.32" />
-<polygon fill="black" stroke="black" points="674.15,-256.38 684.63,-257.94 677.41,-250.19 674.15,-256.38" />
+<g id="edge17" class="edge" x-title="0x7f8ff56055b0-&gt;0x7f8ff5605400">
+<path fill="none" stroke="black" d="M428.93,-206.06C452.26,-218.32 488.49,-237.36 513.84,-250.68" />
+<polygon fill="black" stroke="black" points="512.15,-253.75 522.63,-255.3 515.41,-247.55 512.15,-253.75" />
 </g>
 
-<g id="node19" class="node" x-title="0x7f81fe407f00">
-<polygon fill="lightgrey" stroke="black" points="1386,-497.14 1283,-497.14 1283,-478.14 1386,-478.14 1386,-497.14" />
-<text text-anchor="middle" x="1334.5" y="-485.14" font-family="Times,serif" font-size="10.00">img/color_index.png</text>
+<g id="node19" class="node" x-title="0x7f8ff5704240">
+<polygon fill="lightgrey" stroke="black" points="1224,-494.51 1121,-494.51 1121,-475.51 1224,-475.51 1224,-494.51" />
+<text text-anchor="middle" x="1172.5" y="-482.51" font-family="Times,serif" font-size="10.00">img/color_index.png</text>
 </g>
 
-<g id="edge18" class="edge" x-title="0x7f81fe407de0-&gt;0x7f81fe407f00">
-<path fill="none" stroke="black" d="M1241.11,-487.64C1251.06,-487.64 1261.32,-487.64 1271.23,-487.64" />
-<polygon fill="black" stroke="black" points="1271.15,-491.14 1281.14,-487.64 1271.14,-484.14 1271.15,-491.14" />
+<g id="edge18" class="edge" x-title="0x7f8ff5704120-&gt;0x7f8ff5704240">
+<path fill="none" stroke="black" d="M1079.11,-485.01C1089.06,-485.01 1099.32,-485.01 1109.23,-485.01" />
+<polygon fill="black" stroke="black" points="1109.15,-488.51 1119.14,-485.01 1109.14,-481.51 1109.15,-488.51" />
 </g>
 
-<g id="node20" class="node" x-title="0x7f81fe406ee0">
-<polygon fill="lightgrey" stroke="black" points="1038.5,-432.14 983.5,-432.14 983.5,-413.14 1038.5,-413.14 1038.5,-432.14" />
-<text text-anchor="middle" x="1011" y="-420.14" font-family="Times,serif" font-size="10.00">dat/B.csv</text>
+<g id="node20" class="node" x-title="0x7f8ff5604fb0">
+<polygon fill="lightgrey" stroke="black" points="876.5,-429.51 821.5,-429.51 821.5,-410.51 876.5,-410.51 876.5,-429.51" />
+<text text-anchor="middle" x="849" y="-417.51" font-family="Times,serif" font-size="10.00">dat/B.csv</text>
 </g>
 
-<g id="edge19" class="edge" x-title="0x7f81fe4071e0-&gt;0x7f81fe406ee0">
-<path fill="none" stroke="black" d="M894.55,-449.37C918.52,-443.82 948.8,-436.81 972.34,-431.36" />
-<polygon fill="black" stroke="black" points="972.87,-434.83 981.82,-429.17 971.29,-428.01 972.87,-434.83" />
+<g id="edge19" class="edge" x-title="0x7f8ff5604f20-&gt;0x7f8ff5604fb0">
+<path fill="none" stroke="black" d="M732.55,-446.74C756.52,-441.19 786.8,-434.18 810.34,-428.73" />
+<polygon fill="black" stroke="black" points="810.87,-432.2 819.82,-426.53 809.29,-425.38 810.87,-432.2" />
 </g>
 
-<g id="node21" class="node" x-title="0x7f81fe4072a0">
-<polygon fill="lightgrey" stroke="black" points="1038,-395.14 984,-395.14 984,-376.14 1038,-376.14 1038,-395.14" />
-<text text-anchor="middle" x="1011" y="-383.14" font-family="Times,serif" font-size="10.00">dat/V.csv</text>
+<g id="node21" class="node" x-title="0x7f8ff5605020">
+<polygon fill="lightgrey" stroke="black" points="876,-392.51 822,-392.51 822,-373.51 876,-373.51 876,-392.51" />
+<text text-anchor="middle" x="849" y="-380.51" font-family="Times,serif" font-size="10.00">dat/V.csv</text>
 </g>
 
-<g id="edge20" class="edge" x-title="0x7f81fe4071e0-&gt;0x7f81fe4072a0">
-<path fill="none" stroke="black" d="M872.87,-445.77C891.01,-433.55 919.9,-415.34 947,-403.64 955.13,-400.13 964.15,-397.09 972.76,-394.56" />
-<polygon fill="black" stroke="black" points="973.56,-397.97 982.27,-391.93 971.7,-391.22 973.56,-397.97" />
+<g id="edge20" class="edge" x-title="0x7f8ff5604f20-&gt;0x7f8ff5605020">
+<path fill="none" stroke="black" d="M710.87,-443.14C729.01,-430.91 757.9,-412.7 785,-401.01 793.13,-397.5 802.15,-394.46 810.76,-391.93" />
+<polygon fill="black" stroke="black" points="811.56,-395.33 820.27,-389.3 809.7,-388.59 811.56,-395.33" />
 </g>
 
-<g id="node22" class="node" x-title="0x7f81fe407340">
-<polygon fill="lightgrey" stroke="black" points="1041.5,-358.14 980.5,-358.14 980.5,-339.14 1041.5,-339.14 1041.5,-358.14" />
-<text text-anchor="middle" x="1011" y="-346.14" font-family="Times,serif" font-size="10.00">dat/SG.csv</text>
+<g id="node22" class="node" x-title="0x7f8ff56050c0">
+<polygon fill="lightgrey" stroke="black" points="879.5,-355.51 818.5,-355.51 818.5,-336.51 879.5,-336.51 879.5,-355.51" />
+<text text-anchor="middle" x="849" y="-343.51" font-family="Times,serif" font-size="10.00">dat/SG.csv</text>
 </g>
 
-<g id="edge21" class="edge" x-title="0x7f81fe4071e0-&gt;0x7f81fe407340">
-<path fill="none" stroke="black" d="M866.4,-445.26C886.92,-422.46 928.54,-377.47 947,-366.64 953.79,-362.66 961.51,-359.51 969.17,-357.04" />
-<polygon fill="black" stroke="black" points="970.11,-360.42 978.76,-354.31 968.19,-353.69 970.11,-360.42" />
+<g id="edge21" class="edge" x-title="0x7f8ff5604f20-&gt;0x7f8ff56050c0">
+<path fill="none" stroke="black" d="M704.4,-442.63C724.92,-419.82 766.54,-374.84 785,-364.01 791.79,-360.02 799.51,-356.88 807.17,-354.41" />
+<polygon fill="black" stroke="black" points="808.11,-357.78 816.76,-351.67 806.19,-351.05 808.11,-357.78" />
 </g>
 
-<g id="node23" class="node" x-title="0x7f81fe4074a0">
-<polygon fill="lightgrey" stroke="black" points="1041,-506.14 981,-506.14 981,-487.14 1041,-487.14 1041,-506.14" />
-<text text-anchor="middle" x="1011" y="-494.14" font-family="Times,serif" font-size="10.00">dat/SR.csv</text>
+<g id="node23" class="node" x-title="0x7f8ff5605220">
+<polygon fill="lightgrey" stroke="black" points="879,-503.51 819,-503.51 819,-484.51 879,-484.51 879,-503.51" />
+<text text-anchor="middle" x="849" y="-491.51" font-family="Times,serif" font-size="10.00">dat/SR.csv</text>
 </g>
 
-<g id="edge22" class="edge" x-title="0x7f81fe4071e0-&gt;0x7f81fe4074a0">
-<path fill="none" stroke="black" d="M893.74,-468.23C916.94,-473.9 946.25,-481.06 969.64,-486.78" />
-<polygon fill="black" stroke="black" points="968.58,-490.12 979.12,-489.1 970.24,-483.32 968.58,-490.12" />
+<g id="edge22" class="edge" x-title="0x7f8ff5604f20-&gt;0x7f8ff5605220">
+<path fill="none" stroke="black" d="M731.74,-465.6C754.94,-471.26 784.25,-478.43 807.64,-484.14" />
+<polygon fill="black" stroke="black" points="806.58,-487.49 817.12,-486.46 808.24,-480.69 806.58,-487.49" />
 </g>
 
-<g id="node24" class="node" x-title="0x7f81fe407540">
-<polygon fill="lightgrey" stroke="black" points="1039,-469.14 983,-469.14 983,-450.14 1039,-450.14 1039,-469.14" />
-<text text-anchor="middle" x="1011" y="-457.14" font-family="Times,serif" font-size="10.00">dat/SI.csv</text>
+<g id="node24" class="node" x-title="0x7f8ff56052c0">
+<polygon fill="lightgrey" stroke="black" points="877,-466.51 821,-466.51 821,-447.51 877,-447.51 877,-466.51" />
+<text text-anchor="middle" x="849" y="-454.51" font-family="Times,serif" font-size="10.00">dat/SI.csv</text>
 </g>
 
-<g id="edge23" class="edge" x-title="0x7f81fe4071e0-&gt;0x7f81fe407540">
-<path fill="none" stroke="black" d="M908.89,-458.99C929.39,-459.12 952.28,-459.27 971.09,-459.39" />
-<polygon fill="black" stroke="black" points="970.97,-462.89 980.99,-459.45 971.01,-455.89 970.97,-462.89" />
+<g id="edge23" class="edge" x-title="0x7f8ff5604f20-&gt;0x7f8ff56052c0">
+<path fill="none" stroke="black" d="M746.89,-456.36C767.39,-456.49 790.28,-456.64 809.09,-456.76" />
+<polygon fill="black" stroke="black" points="808.97,-460.26 818.99,-456.82 809.01,-453.26 808.97,-460.26" />
 </g>
 
-<g id="node25" class="node" x-title="0x7f81fe4086c0">
-<polygon fill="lightgrey" stroke="black" points="1391,-368.14 1278,-368.14 1278,-349.14 1391,-349.14 1391,-368.14" />
-<text text-anchor="middle" x="1334.5" y="-356.14" font-family="Times,serif" font-size="10.00">img/lightcurves/all.png</text>
+<g id="node25" class="node" x-title="0x7f8ff5704c90">
+<polygon fill="lightgrey" stroke="black" points="1229,-365.51 1116,-365.51 1116,-346.51 1229,-346.51 1229,-365.51" />
+<text text-anchor="middle" x="1172.5" y="-353.51" font-family="Times,serif" font-size="10.00">img/lightcurves/all.png</text>
 </g>
 
-<g id="edge24" class="edge" x-title="0x7f81fe408630-&gt;0x7f81fe4086c0">
-<path fill="none" stroke="black" d="M1237.06,-352.48C1246.66,-353.09 1256.65,-353.73 1266.41,-354.35" />
-<polygon fill="black" stroke="black" points="1266,-357.84 1276.2,-354.98 1266.44,-350.85 1266,-357.84" />
+<g id="edge24" class="edge" x-title="0x7f8ff5704990-&gt;0x7f8ff5704c90">
+<path fill="none" stroke="black" d="M1075.06,-349.84C1084.66,-350.46 1094.65,-351.1 1104.41,-351.72" />
+<polygon fill="black" stroke="black" points="1104,-355.2 1114.2,-352.35 1104.44,-348.21 1104,-355.2" />
 </g>
 
-<g id="node26" class="node" x-title="0x7f81fe4073e0">
-<polygon fill="lightgrey" stroke="black" points="1389,-331.14 1280,-331.14 1280,-312.14 1389,-312.14 1389,-331.14" />
-<text text-anchor="middle" x="1334.5" y="-319.14" font-family="Times,serif" font-size="10.00">img/lightcurves/B.png</text>
+<g id="node26" class="node" x-title="0x7f8ff5704e80">
+<polygon fill="lightgrey" stroke="black" points="1227,-328.51 1118,-328.51 1118,-309.51 1227,-309.51 1227,-328.51" />
+<text text-anchor="middle" x="1172.5" y="-316.51" font-family="Times,serif" font-size="10.00">img/lightcurves/B.png</text>
 </g>
 
-<g id="edge25" class="edge" x-title="0x7f81fe408630-&gt;0x7f81fe4073e0">
-<path fill="none" stroke="black" d="M1226.09,-340.17C1239.53,-337.85 1254.31,-335.3 1268.49,-332.86" />
-<polygon fill="black" stroke="black" points="1268.94,-336.33 1278.2,-331.18 1267.75,-329.43 1268.94,-336.33" />
+<g id="edge25" class="edge" x-title="0x7f8ff5704990-&gt;0x7f8ff5704e80">
+<path fill="none" stroke="black" d="M1064.09,-337.54C1077.53,-335.22 1092.31,-332.67 1106.49,-330.22" />
+<polygon fill="black" stroke="black" points="1106.94,-333.7 1116.2,-328.55 1105.75,-326.8 1106.94,-333.7" />
 </g>
 
-<g id="node27" class="node" x-title="0x7f81fe408b10">
-<polygon fill="lightgrey" stroke="black" points="1388.5,-294.14 1280.5,-294.14 1280.5,-275.14 1388.5,-275.14 1388.5,-294.14" />
-<text text-anchor="middle" x="1334.5" y="-282.14" font-family="Times,serif" font-size="10.00">img/lightcurves/V.png</text>
+<g id="node27" class="node" x-title="0x7f8ff5704ef0">
+<polygon fill="lightgrey" stroke="black" points="1226.5,-291.51 1118.5,-291.51 1118.5,-272.51 1226.5,-272.51 1226.5,-291.51" />
+<text text-anchor="middle" x="1172.5" y="-279.51" font-family="Times,serif" font-size="10.00">img/lightcurves/V.png</text>
 </g>
 
-<g id="edge26" class="edge" x-title="0x7f81fe408630-&gt;0x7f81fe408b10">
-<path fill="none" stroke="black" d="M1202.11,-336.05C1222.12,-326.27 1250.99,-312.72 1277,-302.64 1280.88,-301.14 1284.93,-299.66 1289.02,-298.24" />
-<polygon fill="black" stroke="black" points="1290,-301.61 1298.37,-295.11 1287.77,-294.97 1290,-301.61" />
+<g id="edge26" class="edge" x-title="0x7f8ff5704990-&gt;0x7f8ff5704ef0">
+<path fill="none" stroke="black" d="M1040.11,-333.41C1060.12,-323.63 1088.99,-310.09 1115,-300.01 1118.88,-298.5 1122.93,-297.03 1127.02,-295.61" />
+<polygon fill="black" stroke="black" points="1128,-298.97 1136.37,-292.48 1125.77,-292.33 1128,-298.97" />
 </g>
 
-<g id="node28" class="node" x-title="0x7f81fe408b80">
-<polygon fill="lightgrey" stroke="black" points="1392,-257.14 1277,-257.14 1277,-238.14 1392,-238.14 1392,-257.14" />
-<text text-anchor="middle" x="1334.5" y="-245.14" font-family="Times,serif" font-size="10.00">img/lightcurves/SG.png</text>
+<g id="node28" class="node" x-title="0x7f8ff5704f60">
+<polygon fill="lightgrey" stroke="black" points="1230,-254.51 1115,-254.51 1115,-235.51 1230,-235.51 1230,-254.51" />
+<text text-anchor="middle" x="1172.5" y="-242.51" font-family="Times,serif" font-size="10.00">img/lightcurves/SG.png</text>
 </g>
 
-<g id="edge27" class="edge" x-title="0x7f81fe408630-&gt;0x7f81fe408b80">
-<path fill="none" stroke="black" d="M1189.68,-335.28C1207.57,-317.15 1241.97,-284.81 1277,-265.64 1279.49,-264.28 1282.1,-263 1284.77,-261.81" />
-<polygon fill="black" stroke="black" points="1285.89,-265.13 1293.88,-258.16 1283.29,-258.63 1285.89,-265.13" />
+<g id="edge27" class="edge" x-title="0x7f8ff5704990-&gt;0x7f8ff5704f60">
+<path fill="none" stroke="black" d="M1027.68,-332.65C1045.57,-314.51 1079.97,-282.17 1115,-263.01 1117.49,-261.65 1120.1,-260.37 1122.77,-259.17" />
+<polygon fill="black" stroke="black" points="1123.89,-262.49 1131.88,-255.53 1121.29,-255.99 1123.89,-262.49" />
 </g>
 
-<g id="node29" class="node" x-title="0x7f81fe408c20">
-<polygon fill="lightgrey" stroke="black" points="1391.5,-442.14 1277.5,-442.14 1277.5,-423.14 1391.5,-423.14 1391.5,-442.14" />
-<text text-anchor="middle" x="1334.5" y="-430.14" font-family="Times,serif" font-size="10.00">img/lightcurves/SR.png</text>
+<g id="node29" class="node" x-title="0x7f8ff5704fd0">
+<polygon fill="lightgrey" stroke="black" points="1229.5,-439.51 1115.5,-439.51 1115.5,-420.51 1229.5,-420.51 1229.5,-439.51" />
+<text text-anchor="middle" x="1172.5" y="-427.51" font-family="Times,serif" font-size="10.00">img/lightcurves/SR.png</text>
 </g>
 
-<g id="edge28" class="edge" x-title="0x7f81fe408630-&gt;0x7f81fe408c20">
-<path fill="none" stroke="black" d="M1194.26,-361.8C1213.59,-376.07 1246.24,-398.77 1277,-413.64 1280.71,-415.44 1284.64,-417.13 1288.62,-418.72" />
-<polygon fill="black" stroke="black" points="1287.17,-421.91 1297.77,-422.12 1289.61,-415.35 1287.17,-421.91" />
+<g id="edge28" class="edge" x-title="0x7f8ff5704990-&gt;0x7f8ff5704fd0">
+<path fill="none" stroke="black" d="M1032.26,-359.17C1051.59,-373.43 1084.24,-396.13 1115,-411.01 1118.71,-412.8 1122.64,-414.5 1126.62,-416.08" />
+<polygon fill="black" stroke="black" points="1125.17,-419.28 1135.77,-419.48 1127.61,-412.72 1125.17,-419.28" />
 </g>
 
-<g id="node30" class="node" x-title="0x7f81fe408cc0">
-<polygon fill="lightgrey" stroke="black" points="1389.5,-405.14 1279.5,-405.14 1279.5,-386.14 1389.5,-386.14 1389.5,-405.14" />
-<text text-anchor="middle" x="1334.5" y="-393.14" font-family="Times,serif" font-size="10.00">img/lightcurves/SI.png</text>
+<g id="node30" class="node" x-title="0x7f8ff5705070">
+<polygon fill="lightgrey" stroke="black" points="1227.5,-402.51 1117.5,-402.51 1117.5,-383.51 1227.5,-383.51 1227.5,-402.51" />
+<text text-anchor="middle" x="1172.5" y="-390.51" font-family="Times,serif" font-size="10.00">img/lightcurves/SI.png</text>
 </g>
 
-<g id="edge29" class="edge" x-title="0x7f81fe408630-&gt;0x7f81fe408cc0">
-<path fill="none" stroke="black" d="M1214.09,-359.78C1236.72,-366.58 1265.77,-375.3 1289.55,-382.44" />
-<polygon fill="black" stroke="black" points="1288.37,-385.74 1298.95,-385.27 1290.38,-379.04 1288.37,-385.74" />
+<g id="edge29" class="edge" x-title="0x7f8ff5704990-&gt;0x7f8ff5705070">
+<path fill="none" stroke="black" d="M1052.09,-357.15C1074.72,-363.94 1103.77,-372.67 1127.55,-379.81" />
+<polygon fill="black" stroke="black" points="1126.37,-383.11 1136.95,-382.63 1128.38,-376.4 1126.37,-383.11" />
 </g>
 
-<g id="node31" class="node" x-title="0x7f81fe408f50">
-<polygon fill="lightgrey" stroke="black" points="1069.5,-282.14 952.5,-282.14 952.5,-263.14 1069.5,-263.14 1069.5,-282.14" />
-<text text-anchor="middle" x="1011" y="-270.14" font-family="Times,serif" font-size="10.00">img/lightcurves/tess.png</text>
+<g id="node31" class="node" x-title="0x7f8ff5705350">
+<polygon fill="lightgrey" stroke="black" points="907.5,-279.51 790.5,-279.51 790.5,-260.51 907.5,-260.51 907.5,-279.51" />
+<text text-anchor="middle" x="849" y="-267.51" font-family="Times,serif" font-size="10.00">img/lightcurves/tess.png</text>
 </g>
 
-<g id="edge30" class="edge" x-title="0x7f81fe408120-&gt;0x7f81fe408f50">
-<path fill="none" stroke="black" d="M888.24,-299.26C907.26,-295.11 931.51,-289.8 953.36,-285.03" />
-<polygon fill="black" stroke="black" points="954.02,-288.46 963.04,-282.91 952.53,-281.63 954.02,-288.46" />
+<g id="edge30" class="edge" x-title="0x7f8ff5704bc0-&gt;0x7f8ff5705350">
+<path fill="none" stroke="black" d="M726.24,-296.63C745.26,-292.47 769.51,-287.17 791.36,-282.39" />
+<polygon fill="black" stroke="black" points="792.02,-285.83 801.04,-280.27 790.53,-278.99 792.02,-285.83" />
 </g>
 
-<g id="node32" class="node" x-title="0x7f81fe4094b0">
-<polygon fill="lightgrey" stroke="black" points="1075,-122.14 947,-122.14 947,-103.14 1075,-103.14 1075,-122.14" />
-<text text-anchor="middle" x="1011" y="-110.14" font-family="Times,serif" font-size="10.00">img/lightcurves/asassn.png</text>
+<g id="node32" class="node" x-title="0x7f8ff5705890">
+<polygon fill="lightgrey" stroke="black" points="913,-119.51 785,-119.51 785,-100.51 913,-100.51 913,-119.51" />
+<text text-anchor="middle" x="849" y="-107.51" font-family="Times,serif" font-size="10.00">img/lightcurves/asassn.png</text>
 </g>
 
-<g id="edge31" class="edge" x-title="0x7f81fe409280-&gt;0x7f81fe4094b0">
-<path fill="none" stroke="black" d="M901.58,-112.64C912.24,-112.64 923.81,-112.64 935.3,-112.64" />
-<polygon fill="black" stroke="black" points="935.21,-116.14 945.21,-112.64 935.21,-109.14 935.21,-116.14" />
+<g id="edge31" class="edge" x-title="0x7f8ff5705660-&gt;0x7f8ff5705890">
+<path fill="none" stroke="black" d="M739.58,-110.01C750.24,-110.01 761.81,-110.01 773.3,-110.01" />
+<polygon fill="black" stroke="black" points="773.21,-113.51 783.21,-110.01 773.21,-106.51 773.21,-113.51" />
 </g>
 
-<g id="edge32" class="edge" x-title="0x7f81fe4067a0-&gt;0x7f81fe4065a0">
-<path fill="none" stroke="black" d="M425.51,-449.45C447.3,-492.13 533.86,-661.68 559.07,-711.07" />
+<g id="edge32" class="edge" x-title="0x7f8ff5604670-&gt;0x7f8ff5604450">
+<path fill="none" stroke="black" d="M285.38,-451.97C303.99,-494.35 376.6,-659.64 398.02,-708.4" />
 </g>
 
-<g id="edge33" class="edge" x-title="0x7f81fe4067a0-&gt;0x7f81fe407860">
-<path fill="none" stroke="black" d="M424.04,-429.81C437.73,-392.23 487.86,-258.03 518,-224.64 524.08,-217.91 532.16,-212.35 539.96,-208" />
+<g id="edge33" class="edge" x-title="0x7f8ff5604670-&gt;0x7f8ff56055b0">
+<path fill="none" stroke="black" d="M281.93,-432.05C285.5,-398.69 301.07,-289.16 356,-222.01 361.62,-215.14 369.4,-209.59 377.06,-205.3" />
 </g>
 
-<g id="edge34" class="edge" x-title="0x7f81fe4067a0-&gt;0x7f81fe407de0">
-<path fill="none" stroke="black" d="M432.05,-449.64C469.03,-480.57 588.87,-572.64 705,-572.64 705,-572.64 705,-572.64 854.5,-572.64 953.08,-572.64 981.68,-580.41 1075,-548.64 1106.96,-537.76 1139.52,-515.34 1158.46,-500.92" />
+<g id="edge34" class="edge" x-title="0x7f8ff5604670-&gt;0x7f8ff5704120">
+<path fill="none" stroke="black" d="M291.57,-451.63C325.4,-481.4 435.17,-570.01 543,-570.01 543,-570.01 543,-570.01 692.5,-570.01 791.08,-570.01 819.68,-577.77 913,-546.01 944.96,-535.13 977.52,-512.71 996.46,-498.29" />
 </g>
 
-<g id="edge35" class="edge" x-title="0x7f81fe4067a0-&gt;0x7f81fe4071e0">
-<path fill="none" stroke="black" d="M443.24,-449.49C462.68,-457.38 491.62,-467.89 518,-472.64 623.87,-491.7 652.93,-486.96 760,-476.64 777.59,-474.95 796.8,-471.48 813.13,-468.03" />
+<g id="edge35" class="edge" x-title="0x7f8ff5604670-&gt;0x7f8ff5604f20">
+<path fill="none" stroke="black" d="M301.8,-451.88C316.56,-458.36 337.04,-466.29 356,-470.01 461.56,-490.7 490.93,-484.33 598,-474.01 615.59,-472.31 634.8,-468.84 651.13,-465.4" />
 </g>
 
-<g id="edge36" class="edge" x-title="0x7f81fe4067a0-&gt;0x7f81fe408630">
-<path fill="none" stroke="black" d="M459.71,-439.82C499.36,-439.45 562.31,-437.33 616,-428.64 681.46,-418.05 696.42,-408.44 760,-389.64 843.7,-364.89 860.77,-343.14 947,-329.64 1003.2,-320.85 1018.36,-324.31 1075,-329.64 1093.83,-331.41 1114.38,-335.02 1131.94,-338.63" />
+<g id="edge36" class="edge" x-title="0x7f8ff5604670-&gt;0x7f8ff5704990">
+<path fill="none" stroke="black" d="M320.46,-441.67C355.71,-440.8 408.65,-438.1 454,-430.01 519.63,-418.3 534.3,-407.68 598,-388.01 681.53,-362.21 698.66,-340.73 785,-327.01 841.18,-318.07 856.36,-321.67 913,-327.01 931.83,-328.78 952.38,-332.39 969.94,-335.99" />
 </g>
 
-<g id="edge37" class="edge" x-title="0x7f81fe4067a0-&gt;0x7f81fe408120">
-<path fill="none" stroke="black" d="M459.75,-433.92C524.09,-423.74 655.33,-399.62 760,-358.64 787.1,-348.03 815.99,-330.71 834.13,-319" />
+<g id="edge37" class="edge" x-title="0x7f8ff5604670-&gt;0x7f8ff5704bc0">
+<path fill="none" stroke="black" d="M320.32,-434.61C381.26,-422.42 501.56,-395.48 598,-356.01 624.94,-344.98 653.86,-327.76 672.06,-316.19" />
 </g>
 
-<g id="edge38" class="edge" x-title="0x7f81fe4067a0-&gt;0x7f81fe409280">
-<path fill="none" stroke="black" d="M429.75,-429.99C459.39,-399.56 555.72,-304.37 652,-249.64 696.37,-224.42 717.32,-238.63 760,-210.64 795.8,-187.16 827.69,-147.17 842.96,-126.28" />
+<g id="edge38" class="edge" x-title="0x7f8ff5604670-&gt;0x7f8ff5705660">
+<path fill="none" stroke="black" d="M289.08,-432.02C315.02,-400.52 399.81,-302.13 490,-247.01 533.54,-220.39 555.32,-235.99 598,-208.01 633.8,-184.53 665.69,-144.54 680.96,-123.64" />
 </g>
 
-<g id="edge39" class="edge" x-title="0x7f81fe407680-&gt;0x7f81fe4071e0">
-<path fill="none" stroke="black" d="M714.62,-278.59C738.88,-310.28 814.4,-408.89 842.14,-445.11" />
+<g id="edge39" class="edge" x-title="0x7f8ff5605400-&gt;0x7f8ff5604f20">
+<path fill="none" stroke="black" d="M552.62,-275.95C576.88,-307.64 652.4,-406.25 680.14,-442.48" />
 </g>
 
-<g id="edge40" class="edge" x-title="0x7f81fe407680-&gt;0x7f81fe408630">
-<path fill="none" stroke="black" d="M739.75,-258.69C805.9,-240.4 959.05,-207.35 1075,-253.64 1116.36,-270.16 1150.41,-312.82 1165.94,-334.92" />
+<g id="edge40" class="edge" x-title="0x7f8ff5605400-&gt;0x7f8ff5704990">
+<path fill="none" stroke="black" d="M577.75,-256.05C643.9,-237.76 797.05,-204.71 913,-251.01 954.36,-267.52 988.41,-310.19 1003.94,-332.29" />
 </g>
 
-<g id="edge41" class="edge" x-title="0x7f81fe407680-&gt;0x7f81fe408120">
-<path fill="none" stroke="black" d="M745.23,-278.63C768.64,-284.74 798.25,-292.47 820.43,-298.27" />
+<g id="edge41" class="edge" x-title="0x7f8ff5605400-&gt;0x7f8ff5704bc0">
+<path fill="none" stroke="black" d="M583.23,-275.99C606.64,-282.1 636.25,-289.84 658.43,-295.63" />
 </g>
 
-<g id="edge42" class="edge" x-title="0x7f81fe407680-&gt;0x7f81fe409280">
-<path fill="none" stroke="black" d="M736.4,-258.65C744.57,-255.03 753.08,-250.38 760,-244.64 801.57,-210.16 833.04,-152.65 846,-126.43" />
+<g id="edge42" class="edge" x-title="0x7f8ff5605400-&gt;0x7f8ff5705660">
+<path fill="none" stroke="black" d="M574.4,-256.02C582.57,-252.4 591.08,-247.75 598,-242.01 639.57,-207.53 671.04,-150.01 684,-123.79" />
 </g>
 
-<g id="edge43" class="edge" x-title="0x7f81fe406ee0-&gt;0x7f81fe407de0">
-<path fill="none" stroke="black" d="M1038.98,-429.32C1050.25,-432.38 1063.39,-436.29 1075,-440.64 1101.58,-450.61 1130.85,-464.76 1150.82,-474.93" />
+<g id="edge43" class="edge" x-title="0x7f8ff5604fb0-&gt;0x7f8ff5704120">
+<path fill="none" stroke="black" d="M876.98,-426.69C888.25,-429.74 901.39,-433.65 913,-438.01 939.58,-447.98 968.85,-462.13 988.82,-472.29" />
 </g>
 
-<g id="edge44" class="edge" x-title="0x7f81fe406ee0-&gt;0x7f81fe408630">
-<path fill="none" stroke="black" d="M1038.8,-415.9C1050.15,-412.7 1063.42,-408.51 1075,-403.64 1103.49,-391.67 1134.4,-373.86 1154.19,-361.78" />
+<g id="edge44" class="edge" x-title="0x7f8ff5604fb0-&gt;0x7f8ff5704990">
+<path fill="none" stroke="black" d="M876.8,-413.27C888.15,-410.07 901.42,-405.88 913,-401.01 941.49,-389.03 972.4,-371.23 992.19,-359.15" />
 </g>
 
-<g id="edge45" class="edge" x-title="0x7f81fe4072a0-&gt;0x7f81fe407de0">
-<path fill="none" stroke="black" d="M1038.39,-390.57C1050.04,-393.4 1063.65,-397.61 1075,-403.64 1110.44,-422.47 1144.68,-455.42 1162.43,-473.96" />
+<g id="edge45" class="edge" x-title="0x7f8ff5605020-&gt;0x7f8ff5704120">
+<path fill="none" stroke="black" d="M876.39,-387.94C888.04,-390.76 901.65,-394.97 913,-401.01 948.44,-419.84 982.68,-452.79 1000.43,-471.33" />
 </g>
 
-<g id="edge46" class="edge" x-title="0x7f81fe4072a0-&gt;0x7f81fe408630">
-<path fill="none" stroke="black" d="M1038.19,-379.7C1063.3,-374 1101.67,-365.29 1131.39,-358.54" />
+<g id="edge46" class="edge" x-title="0x7f8ff5605020-&gt;0x7f8ff5704990">
+<path fill="none" stroke="black" d="M876.19,-377.06C901.3,-371.36 939.67,-362.65 969.39,-355.91" />
 </g>
 
-<g id="edge47" class="edge" x-title="0x7f81fe407340-&gt;0x7f81fe407de0">
-<path fill="none" stroke="black" d="M1041.78,-353.29C1052.85,-355.98 1065.1,-360.17 1075,-366.64 1118.79,-395.28 1153.15,-449.02 1167.59,-474.11" />
+<g id="edge47" class="edge" x-title="0x7f8ff56050c0-&gt;0x7f8ff5704120">
+<path fill="none" stroke="black" d="M879.78,-350.66C890.85,-353.35 903.1,-357.53 913,-364.01 956.79,-392.65 991.15,-446.39 1005.59,-471.47" />
 </g>
 
-<g id="edge48" class="edge" x-title="0x7f81fe407340-&gt;0x7f81fe408630">
-<path fill="none" stroke="black" d="M1041.9,-348.64C1061.66,-348.64 1088.29,-348.64 1112.54,-348.64" />
+<g id="edge48" class="edge" x-title="0x7f8ff56050c0-&gt;0x7f8ff5704990">
+<path fill="none" stroke="black" d="M879.9,-346.01C899.66,-346.01 926.29,-346.01 950.54,-346.01" />
 </g>
 
-<g id="edge49" class="edge" x-title="0x7f81fe4074a0-&gt;0x7f81fe407de0">
-<path fill="none" stroke="black" d="M1041.14,-495.03C1061.01,-493.94 1088.08,-492.44 1112.68,-491.08" />
+<g id="edge49" class="edge" x-title="0x7f8ff5605220-&gt;0x7f8ff5704120">
+<path fill="none" stroke="black" d="M879.14,-492.4C899.01,-491.3 926.08,-489.81 950.68,-488.45" />
 </g>
 
-<g id="edge50" class="edge" x-title="0x7f81fe4074a0-&gt;0x7f81fe408630">
-<path fill="none" stroke="black" d="M1041.26,-491.78C1052.5,-488.94 1065.02,-484.5 1075,-477.64 1120.31,-446.5 1154.37,-388.48 1168.22,-362.2" />
+<g id="edge50" class="edge" x-title="0x7f8ff5605220-&gt;0x7f8ff5704990">
+<path fill="none" stroke="black" d="M879.26,-489.15C890.5,-486.3 903.02,-481.87 913,-475.01 958.31,-443.87 992.37,-385.84 1006.22,-359.56" />
 </g>
 
-<g id="edge51" class="edge" x-title="0x7f81fe407540-&gt;0x7f81fe407de0">
-<path fill="none" stroke="black" d="M1039.28,-464.33C1062.57,-468.33 1096.68,-474.19 1124.87,-479.03" />
+<g id="edge51" class="edge" x-title="0x7f8ff56052c0-&gt;0x7f8ff5704120">
+<path fill="none" stroke="black" d="M877.28,-461.69C900.57,-465.69 934.68,-471.55 962.87,-476.4" />
 </g>
 
-<g id="edge52" class="edge" x-title="0x7f81fe407540-&gt;0x7f81fe408630">
-<path fill="none" stroke="black" d="M1039.45,-454.23C1050.92,-451.25 1064.08,-446.87 1075,-440.64 1112.09,-419.49 1146.72,-382.26 1163.83,-362.26" />
+<g id="edge52" class="edge" x-title="0x7f8ff56052c0-&gt;0x7f8ff5704990">
+<path fill="none" stroke="black" d="M877.45,-451.59C888.92,-448.62 902.08,-444.23 913,-438.01 950.09,-416.85 984.72,-379.62 1001.83,-359.62" />
 </g>
 
-<g id="node33" class="node" x-title="0x7f81fe406810">
-<polygon fill="lightgrey" stroke="black" points="446.5,-696.14 392.5,-696.14 392.5,-677.14 446.5,-677.14 446.5,-696.14" />
-<text text-anchor="middle" x="419.5" y="-684.14" font-family="Times,serif" font-size="10.00">build.py</text>
+<g id="node33" class="node" x-title="0x7f8ff5604720">
+<polygon fill="lightgrey" stroke="black" points="307,-693.51 253,-693.51 253,-674.51 307,-674.51 307,-693.51" />
+<text text-anchor="middle" x="280" y="-681.51" font-family="Times,serif" font-size="10.00">build.py</text>
 </g>
 
-<g id="edge53" class="edge" x-title="0x7f81fe406810-&gt;0x7f81fe4065a0">
-<path fill="none" stroke="black" d="M446.85,-693.52C471.58,-699.98 508.59,-709.65 534.79,-716.49" />
+<g id="edge53" class="edge" x-title="0x7f8ff5604720-&gt;0x7f8ff5604450">
+<path fill="none" stroke="black" d="M307.39,-692.16C327.15,-698.27 354.19,-706.62 374.64,-712.94" />
 </g>
 
-<g id="node34" class="node" x-title="0x7f81fe407ae0">
-<polygon fill="lightgrey" stroke="black" points="453,-206.14 386,-206.14 386,-187.14 453,-187.14 453,-206.14" />
-<text text-anchor="middle" x="419.5" y="-194.14" font-family="Times,serif" font-size="10.00">matplotlibrc</text>
+<g id="node34" class="node" x-title="0x7f8ff5605840">
+<polygon fill="lightgrey" stroke="black" points="313.5,-203.51 246.5,-203.51 246.5,-184.51 313.5,-184.51 313.5,-203.51" />
+<text text-anchor="middle" x="280" y="-191.51" font-family="Times,serif" font-size="10.00">matplotlibrc</text>
 </g>
 
-<g id="edge54" class="edge" x-title="0x7f81fe407ae0-&gt;0x7f81fe407860">
-<path fill="none" stroke="black" d="M453.15,-196.64C472.17,-196.64 496.51,-196.64 517.71,-196.64" />
+<g id="edge54" class="edge" x-title="0x7f8ff5605840-&gt;0x7f8ff56055b0">
+<path fill="none" stroke="black" d="M313.96,-194.01C326.77,-194.01 341.7,-194.01 355.68,-194.01" />
 </g>
 
-<g id="edge55" class="edge" x-title="0x7f81fe407ae0-&gt;0x7f81fe407de0">
-<path fill="none" stroke="black" d="M425.18,-206.57C445.34,-248.11 529.39,-409.02 652,-476.64 817.28,-567.8 887.88,-539.46 1075,-514.64 1097.28,-511.69 1121.65,-505.18 1140.75,-499.29" />
+<g id="edge55" class="edge" x-title="0x7f8ff5605840-&gt;0x7f8ff5704120">
+<path fill="none" stroke="black" d="M284.93,-203.92C301.95,-245.4 373.73,-406.06 490,-474.01 652.97,-569.24 725.88,-536.82 913,-512.01 935.28,-509.05 959.65,-502.55 978.75,-496.66" />
 </g>
 
-<g id="edge56" class="edge" x-title="0x7f81fe407ae0-&gt;0x7f81fe408630">
-<path fill="none" stroke="black" d="M453.23,-187.79C472.05,-182.99 496.22,-177.3 518,-173.64 600.38,-159.8 621.46,-154.64 705,-154.64 705,-154.64 705,-154.64 854.5,-154.64 957.59,-154.64 989.91,-168.44 1075,-226.64 1118.4,-256.33 1152.95,-310.11 1167.51,-335.14" />
+<g id="edge56" class="edge" x-title="0x7f8ff5605840-&gt;0x7f8ff5704990">
+<path fill="none" stroke="black" d="M308.8,-184.05C322.79,-179.41 340.11,-174.22 356,-171.01 437.88,-154.46 459.46,-152.01 543,-152.01 543,-152.01 543,-152.01 692.5,-152.01 795.59,-152.01 827.91,-165.81 913,-224.01 956.4,-253.69 990.95,-307.47 1005.51,-332.51" />
 </g>
 
-<g id="edge57" class="edge" x-title="0x7f81fe407ae0-&gt;0x7f81fe408120">
-<path fill="none" stroke="black" d="M440.65,-206.64C480.12,-225.73 570.86,-267.2 652,-286.64 706.6,-299.72 771.55,-304.26 812.41,-305.83" />
+<g id="edge57" class="edge" x-title="0x7f8ff5605840-&gt;0x7f8ff5704bc0">
+<path fill="none" stroke="black" d="M298.78,-203.91C334.03,-223.03 415.8,-264.82 490,-284.01 544.36,-298.06 609.37,-302.35 650.3,-303.6" />
 </g>
 
-<g id="edge58" class="edge" x-title="0x7f81fe407ae0-&gt;0x7f81fe409280">
-<path fill="none" stroke="black" d="M433.51,-186.65C451.42,-173.51 485.2,-150.87 518,-140.64 617.02,-109.75 740.06,-108.28 805.84,-110.25" />
+<g id="edge58" class="edge" x-title="0x7f8ff5605840-&gt;0x7f8ff5705660">
+<path fill="none" stroke="black" d="M290.11,-184.43C303.26,-171.33 328.95,-148.26 356,-138.01 453.95,-100.87 579.26,-102.08 645.22,-106.09" />
 </g>
 
-<g id="node35" class="node" x-title="0x7f81fe407b80">
-<polygon fill="lightgrey" stroke="black" points="456.5,-129.14 382.5,-129.14 382.5,-110.14 456.5,-110.14 456.5,-129.14" />
-<text text-anchor="middle" x="419.5" y="-117.14" font-family="Times,serif" font-size="10.00">dat/asassn.csv</text>
+<g id="node35" class="node" x-title="0x7f8ff56058e0">
+<polygon fill="lightgrey" stroke="black" points="317,-126.51 243,-126.51 243,-107.51 317,-107.51 317,-126.51" />
+<text text-anchor="middle" x="280" y="-114.51" font-family="Times,serif" font-size="10.00">dat/asassn.csv</text>
 </g>
 
-<g id="edge59" class="edge" x-title="0x7f81fe407b80-&gt;0x7f81fe407860">
-<path fill="none" stroke="black" d="M439.22,-129.55C465.78,-143.6 514.34,-169.3 543.04,-184.49" />
+<g id="edge59" class="edge" x-title="0x7f8ff56058e0-&gt;0x7f8ff56055b0">
+<path fill="none" stroke="black" d="M296.83,-126.92C319.15,-140.89 359.85,-166.37 384.17,-181.59" />
 </g>
 
-<g id="edge60" class="edge" x-title="0x7f81fe407b80-&gt;0x7f81fe409280">
-<path fill="none" stroke="black" d="M456.88,-111.76C475.13,-108.2 497.63,-104.4 518,-102.64 625.16,-93.37 652.6,-96.85 760,-102.64 776.13,-103.51 793.77,-105.23 809.28,-107" />
+<g id="edge60" class="edge" x-title="0x7f8ff56058e0-&gt;0x7f8ff5705660">
+<path fill="none" stroke="black" d="M317.34,-107.06C329.53,-104.18 343.26,-101.43 356,-100.01 462.89,-88.04 490.6,-94.22 598,-100.01 614.13,-100.88 631.77,-102.59 647.28,-104.36" />
 </g>
 
-<g id="node36" class="node" x-title="0x7f81fe407610">
-<polygon fill="lightgrey" stroke="black" points="741,-468.14 671,-468.14 671,-449.14 741,-449.14 741,-468.14" />
-<text text-anchor="middle" x="706" y="-456.14" font-family="Times,serif" font-size="10.00">dat/stars.json</text>
+<g id="node36" class="node" x-title="0x7f8ff5605390">
+<polygon fill="lightgrey" stroke="black" points="579,-465.51 509,-465.51 509,-446.51 579,-446.51 579,-465.51" />
+<text text-anchor="middle" x="544" y="-453.51" font-family="Times,serif" font-size="10.00">dat/stars.json</text>
 </g>
 
-<g id="edge61" class="edge" x-title="0x7f81fe407610-&gt;0x7f81fe4071e0">
-<path fill="none" stroke="black" d="M741.48,-458.64C758.37,-458.64 779.11,-458.64 798.07,-458.64" />
-</g>
-
-<g id="node37" class="node" x-title="0x7f81fe409ad0">
-<polygon fill="lightgrey" stroke="black" points="480.5,-809.14 358.5,-809.14 358.5,-790.14 480.5,-790.14 480.5,-809.14" />
-<text text-anchor="middle" x="419.5" y="-797.14" font-family="Times,serif" font-size="10.00">screencasts/main/out.mp4</text>
-</g>
-
-<g id="node38" class="node" x-title="0x7f81fe409890">
-<ellipse fill="lightgrey" stroke="black" cx="244" cy="-799.64" rx="75" ry="13.5" />
-<text text-anchor="middle" x="244" y="-797.14" font-family="Times,serif" font-size="10.00">src.screencast.py.main</text>
-</g>
-
-<g id="edge62" class="edge" x-title="0x7f81fe409890-&gt;0x7f81fe409ad0">
-<path fill="none" stroke="black" d="M319.33,-799.64C328.45,-799.64 337.76,-799.64 346.84,-799.64" />
-<polygon fill="black" stroke="black" points="346.67,-803.14 356.67,-799.64 346.67,-796.14 346.67,-803.14" />
-</g>
-
-<g id="node39" class="node" x-title="0x7f81fe409b40">
-<polygon fill="lightgrey" stroke="black" points="117,-883.14 14,-883.14 14,-864.14 117,-864.14 117,-883.14" />
-<text text-anchor="middle" x="65.5" y="-871.14" font-family="Times,serif" font-size="10.00">screencasts/main.yml</text>
-</g>
-
-<g id="edge63" class="edge" x-title="0x7f81fe409b40-&gt;0x7f81fe409890">
-<path fill="none" stroke="black" d="M104.38,-863.65C113.21,-861 122.52,-857.95 131,-854.64 162.49,-842.37 197.19,-824.63 219.5,-812.65" />
-</g>
-
-<g id="node40" class="node" x-title="0x7f81fe409be0">
-<polygon fill="lightgrey" stroke="black" points="126.5,-846.14 4.5,-846.14 4.5,-827.14 126.5,-827.14 126.5,-846.14" />
-<text text-anchor="middle" x="65.5" y="-834.14" font-family="Times,serif" font-size="10.00">screencasts/main/sab.mov</text>
-</g>
-
-<g id="edge64" class="edge" x-title="0x7f81fe409be0-&gt;0x7f81fe409890">
-<path fill="none" stroke="black" d="M113.8,-826.73C138.51,-821.55 168.73,-815.21 193.72,-809.97" />
-</g>
-
-<g id="node41" class="node" x-title="0x7f81fe409cc0">
-<polygon fill="lightgrey" stroke="black" points="125,-809.14 6,-809.14 6,-790.14 125,-790.14 125,-809.14" />
-<text text-anchor="middle" x="65.5" y="-797.14" font-family="Times,serif" font-size="10.00">screencasts/main/tm.mov</text>
-</g>
-
-<g id="edge65" class="edge" x-title="0x7f81fe409cc0-&gt;0x7f81fe409890">
-<path fill="none" stroke="black" d="M125.27,-799.64C139.21,-799.64 154.26,-799.64 168.79,-799.64" />
-</g>
-
-<g id="node42" class="node" x-title="0x7f81fe409d80">
-<polygon fill="lightgrey" stroke="black" points="123.5,-772.14 7.5,-772.14 7.5,-753.14 123.5,-753.14 123.5,-772.14" />
-<text text-anchor="middle" x="65.5" y="-760.14" font-family="Times,serif" font-size="10.00">screencasts/main/jb.mp4</text>
-</g>
-
-<g id="edge66" class="edge" x-title="0x7f81fe409d80-&gt;0x7f81fe409890">
-<path fill="none" stroke="black" d="M113.8,-772.56C138.51,-777.74 168.73,-784.07 193.72,-789.31" />
-</g>
-
-<g id="node43" class="node" x-title="0x7f81fe409e40">
-<polygon fill="lightgrey" stroke="black" points="127,-735.14 4,-735.14 4,-716.14 127,-716.14 127,-735.14" />
-<text text-anchor="middle" x="65.5" y="-723.14" font-family="Times,serif" font-size="10.00">screencasts/main/elle.mp4</text>
-</g>
-
-<g id="edge67" class="edge" x-title="0x7f81fe409e40-&gt;0x7f81fe409890">
-<path fill="none" stroke="black" d="M106.8,-735.6C114.91,-737.97 123.3,-740.67 131,-743.64 162.85,-755.92 197.76,-774.2 219.99,-786.5" />
-</g>
-
-<g id="node44" class="node" x-title="0x7f81fe40a490">
-<polygon fill="lightgrey" stroke="black" points="482,-1031.14 357,-1031.14 357,-1012.14 482,-1012.14 482,-1031.14" />
-<text text-anchor="middle" x="419.5" y="-1019.14" font-family="Times,serif" font-size="10.00">screencasts/aavso/out.mp4</text>
-</g>
-
-<g id="node45" class="node" x-title="0x7f81fe40a230">
-<ellipse fill="lightgrey" stroke="black" cx="244" cy="-1021.64" rx="77" ry="13.5" />
-<text text-anchor="middle" x="244" y="-1019.14" font-family="Times,serif" font-size="10.00">src.screencast.py.aavso</text>
-</g>
-
-<g id="edge68" class="edge" x-title="0x7f81fe40a230-&gt;0x7f81fe40a490">
-<path fill="none" stroke="black" d="M321.35,-1021.64C329.29,-1021.64 337.35,-1021.64 345.26,-1021.64" />
-<polygon fill="black" stroke="black" points="345.18,-1025.14 355.18,-1021.64 345.18,-1018.14 345.18,-1025.14" />
-</g>
-
-<g id="node46" class="node" x-title="0x7f81fe40a590">
-<polygon fill="lightgrey" stroke="black" points="118.5,-1142.14 12.5,-1142.14 12.5,-1123.14 118.5,-1123.14 118.5,-1142.14" />
-<text text-anchor="middle" x="65.5" y="-1130.14" font-family="Times,serif" font-size="10.00">screencasts/aavso.yml</text>
-</g>
-
-<g id="edge69" class="edge" x-title="0x7f81fe40a590-&gt;0x7f81fe40a230">
-<path fill="none" stroke="black" d="M111.51,-1122.72C118.22,-1120.5 124.92,-1117.82 131,-1114.64 171.75,-1093.3 211.16,-1055.3 230.55,-1035.11" />
-</g>
-
-<g id="node47" class="node" x-title="0x7f81fe40a630">
-<polygon fill="lightgrey" stroke="black" points="131,-1105.14 0,-1105.14 0,-1086.14 131,-1086.14 131,-1105.14" />
-<text text-anchor="middle" x="65.5" y="-1093.14" font-family="Times,serif" font-size="10.00">screencasts/aavso/intro.mov</text>
-</g>
-
-<g id="edge70" class="edge" x-title="0x7f81fe40a630-&gt;0x7f81fe40a230">
-<path fill="none" stroke="black" d="M106.8,-1085.68C114.91,-1083.32 123.3,-1080.61 131,-1077.64 162.85,-1065.37 197.76,-1047.08 219.99,-1034.78" />
-</g>
-
-<g id="node48" class="node" x-title="0x7f81fe40a6f0">
-<polygon fill="lightgrey" stroke="black" points="128.5,-1068.14 2.5,-1068.14 2.5,-1049.14 128.5,-1049.14 128.5,-1068.14" />
-<text text-anchor="middle" x="65.5" y="-1056.14" font-family="Times,serif" font-size="10.00">screencasts/aavso/end.mov</text>
-</g>
-
-<g id="edge71" class="edge" x-title="0x7f81fe40a6f0-&gt;0x7f81fe40a230">
-<path fill="none" stroke="black" d="M113.8,-1048.73C138.31,-1043.59 168.23,-1037.32 193.1,-1032.1" />
-</g>
-
-<g id="node49" class="node" x-title="0x7f81fe40a7c0">
-<polygon fill="lightgrey" stroke="black" points="128,-1031.14 3,-1031.14 3,-1012.14 128,-1012.14 128,-1031.14" />
-<text text-anchor="middle" x="65.5" y="-1019.14" font-family="Times,serif" font-size="10.00">screencasts/aavso/sab.mov</text>
-</g>
-
-<g id="edge72" class="edge" x-title="0x7f81fe40a7c0-&gt;0x7f81fe40a230">
-<path fill="none" stroke="black" d="M128.23,-1021.64C140.66,-1021.64 153.86,-1021.64 166.71,-1021.64" />
-</g>
-
-<g id="node50" class="node" x-title="0x7f81fe40a890">
-<polygon fill="lightgrey" stroke="black" points="126.5,-994.14 4.5,-994.14 4.5,-975.14 126.5,-975.14 126.5,-994.14" />
-<text text-anchor="middle" x="65.5" y="-982.14" font-family="Times,serif" font-size="10.00">screencasts/aavso/tm.mp4</text>
-</g>
-
-<g id="edge73" class="edge" x-title="0x7f81fe40a890-&gt;0x7f81fe40a230">
-<path fill="none" stroke="black" d="M113.8,-994.56C138.31,-999.69 168.23,-1005.97 193.1,-1011.18" />
-</g>
-
-<g id="node51" class="node" x-title="0x7f81fe40a960">
-<polygon fill="lightgrey" stroke="black" points="125,-957.14 6,-957.14 6,-938.14 125,-938.14 125,-957.14" />
-<text text-anchor="middle" x="65.5" y="-945.14" font-family="Times,serif" font-size="10.00">screencasts/aavso/jb.mp4</text>
-</g>
-
-<g id="edge74" class="edge" x-title="0x7f81fe40a960-&gt;0x7f81fe40a230">
-<path fill="none" stroke="black" d="M104.38,-957.63C113.21,-960.28 122.52,-963.34 131,-966.64 162.29,-978.83 196.75,-996.42 219.07,-1008.4" />
-</g>
-
-<g id="node52" class="node" x-title="0x7f81fe4089a0">
-<polygon fill="lightgrey" stroke="black" points="128.5,-920.14 2.5,-920.14 2.5,-901.14 128.5,-901.14 128.5,-920.14" />
-<text text-anchor="middle" x="65.5" y="-908.14" font-family="Times,serif" font-size="10.00">screencasts/aavso/elle.mp4</text>
-</g>
-
-<g id="edge75" class="edge" x-title="0x7f81fe4089a0-&gt;0x7f81fe40a230">
-<path fill="none" stroke="black" d="M111.51,-920.56C118.22,-922.79 124.92,-925.46 131,-928.64 171.75,-949.99 211.16,-987.99 230.55,-1008.17" />
+<g id="edge61" class="edge" x-title="0x7f8ff5605390-&gt;0x7f8ff5604f20">
+<path fill="none" stroke="black" d="M579.48,-456.01C596.37,-456.01 617.11,-456.01 636.07,-456.01" />
 </g>
 </g>
 <script>function fade(node, reset=false) {

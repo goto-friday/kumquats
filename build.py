@@ -57,18 +57,18 @@ b.add(["src/asassn.py"],
         cat('dat/', ['known', 'period'], '.json'),
     outputs = ['img/lightcurves/asassn.png'])
 
-b.add(["src/screencast.py", "main"],
-    inputs = ['screencasts/main.yml'] + cat('screencasts/main/',
-        ['sab.mov', 'tm.mov', 'jb.mp4', 'elle.mp4']),
-    outputs = ['screencasts/main/out.mp4'],
-    ignored_inputs = ['screencasts/main/slides/*'],
-    ignored_outputs = ['screencasts/main/slides/*'])
-
-b.add(["src/screencast.py", "aavso"],
-    inputs = ['screencasts/aavso.yml'] + cat('screencasts/aavso/',
-            ['intro.mov', 'end.mov', 'sab.mov', 'tm.mp4', 'jb.mp4', 'elle.mp4']),
-    outputs = ['screencasts/aavso/out.mp4'],
-    ignored_inputs = ['screencasts/aavso/slides/*'],
-    ignored_outputs = ['screencasts/aavso/slides/*'])
+#b.add(["src/screencast.py", "main"],
+#    inputs = ['screencasts/main.yml'] + cat('screencasts/main/',
+#        ['sab.mov', 'tm.mov', 'jb.mp4', 'elle.mp4']),
+#    outputs = ['screencasts/main/out.mp4'],
+#    ignored_inputs = ['screencasts/main/slides/*'],
+#    ignored_outputs = ['screencasts/main/slides/*'])
+#
+#b.add(["src/screencast.py", "aavso"],
+#    inputs = ['screencasts/aavso.yml'] + cat('screencasts/aavso/',
+#            ['intro.mov', 'end.mov', 'sab.mov', 'tm.mp4', 'jb.mp4', 'elle.mp4']),
+#    outputs = ['screencasts/aavso/out.mp4'],
+#    ignored_inputs = ['screencasts/aavso/slides/*'],
+#    ignored_outputs = ['screencasts/aavso/slides/*'])
 
 b.write()

@@ -1,77 +1,63 @@
 
 rule lib.gengraph.py
-  command = lib/chk.py 'build.ninja:lib/graph.js:lib/gengraph.py' 'dag.svg' $
+  command = lib/chk.py "$in" "$out" $
     '' '' $
     lib/gengraph.py
   pool = console
 build dag.svg: lib.gengraph.py build.ninja lib/graph.js lib/gengraph.py
 
 rule ..build.py
-  command = lib/chk.py 'lib/x.py:dat/config.yml:dat/known.json:./build.py' 'build.ninja' $
+  command = lib/chk.py "$in" "$out" $
     '' '' $
     ./build.py
   pool = console
 build build.ninja: ..build.py lib/x.py dat/config.yml dat/known.json ./build.py
 
 rule src.query.py
-  command = lib/chk.py 'dat/config.yml:src/query.py' 'dat/known.json' $
+  command = lib/chk.py "$in" "$out" $
     '' '' $
     src/query.py
   pool = console
 build dat/known.json: src.query.py dat/config.yml src/query.py
 
 rule src.calibrate.py
-  command = lib/chk.py 'dat/config.yml:dat/known.json:dat/stars.json:dat/period.json:src/calibrate.py' 'dat/B.csv:dat/V.csv:dat/SG.csv:dat/SR.csv:dat/SI.csv' $
+  command = lib/chk.py "$in" "$out" $
     '' '' $
     src/calibrate.py
   pool = console
 build dat/B.csv dat/V.csv dat/SG.csv dat/SR.csv dat/SI.csv: src.calibrate.py dat/config.yml dat/known.json dat/stars.json dat/period.json src/calibrate.py
 
 rule src.period.py
-  command = lib/chk.py 'matplotlibrc:dat/config.yml:dat/known.json:dat/asassn.csv:src/period.py' 'dat/period.json:img/period/asassn.png' $
+  command = lib/chk.py "$in" "$out" $
     '' '' $
     src/period.py
   pool = console
 build dat/period.json img/period/asassn.png: src.period.py matplotlibrc dat/config.yml dat/known.json dat/asassn.csv src/period.py
 
 rule src.color_index.py
-  command = lib/chk.py 'matplotlibrc:dat/config.yml:dat/known.json:dat/B.csv:dat/V.csv:dat/SG.csv:dat/SR.csv:dat/SI.csv:src/color_index.py' 'img/color_index.png' $
+  command = lib/chk.py "$in" "$out" $
     '' '' $
     src/color_index.py
   pool = console
 build img/color_index.png: src.color_index.py matplotlibrc dat/config.yml dat/known.json dat/B.csv dat/V.csv dat/SG.csv dat/SR.csv dat/SI.csv src/color_index.py
 
 rule src.lightcurves.py
-  command = lib/chk.py 'matplotlibrc:dat/config.yml:dat/known.json:dat/period.json:dat/B.csv:dat/V.csv:dat/SG.csv:dat/SR.csv:dat/SI.csv:src/lightcurves.py' 'img/lightcurves/all.png:img/lightcurves/B.png:img/lightcurves/V.png:img/lightcurves/SG.png:img/lightcurves/SR.png:img/lightcurves/SI.png' $
+  command = lib/chk.py "$in" "$out" $
     '' '' $
     src/lightcurves.py
   pool = console
 build img/lightcurves/all.png img/lightcurves/B.png img/lightcurves/V.png img/lightcurves/SG.png img/lightcurves/SR.png img/lightcurves/SI.png: src.lightcurves.py matplotlibrc dat/config.yml dat/known.json dat/period.json dat/B.csv dat/V.csv dat/SG.csv dat/SR.csv dat/SI.csv src/lightcurves.py
 
 rule src.tess.py
-  command = lib/chk.py 'matplotlibrc:dat/config.yml:dat/known.json:dat/period.json:src/tess.py' 'img/lightcurves/tess.png' $
+  command = lib/chk.py "$in" "$out" $
     '' '' $
     src/tess.py
   pool = console
 build img/lightcurves/tess.png: src.tess.py matplotlibrc dat/config.yml dat/known.json dat/period.json src/tess.py
 
 rule src.asassn.py
-  command = lib/chk.py 'matplotlibrc:dat/config.yml:dat/asassn.csv:dat/known.json:dat/period.json:src/asassn.py' 'img/lightcurves/asassn.png' $
+  command = lib/chk.py "$in" "$out" $
     '' '' $
     src/asassn.py
   pool = console
 build img/lightcurves/asassn.png: src.asassn.py matplotlibrc dat/config.yml dat/asassn.csv dat/known.json dat/period.json src/asassn.py
-
-rule src.screencast.py.main
-  command = lib/chk.py 'screencasts/main.yml:screencasts/main/sab.mov:screencasts/main/tm.mov:screencasts/main/jb.mp4:screencasts/main/elle.mp4:src/screencast.py' 'screencasts/main/out.mp4' $
-    'screencasts/main/slides/*' 'screencasts/main/slides/*' $
-    src/screencast.py main
-  pool = console
-build screencasts/main/out.mp4: src.screencast.py.main screencasts/main.yml screencasts/main/sab.mov screencasts/main/tm.mov screencasts/main/jb.mp4 screencasts/main/elle.mp4 src/screencast.py
-
-rule src.screencast.py.aavso
-  command = lib/chk.py 'screencasts/aavso.yml:screencasts/aavso/intro.mov:screencasts/aavso/end.mov:screencasts/aavso/sab.mov:screencasts/aavso/tm.mp4:screencasts/aavso/jb.mp4:screencasts/aavso/elle.mp4:src/screencast.py' 'screencasts/aavso/out.mp4' $
-    'screencasts/aavso/slides/*' 'screencasts/aavso/slides/*' $
-    src/screencast.py aavso
-  pool = console
-build screencasts/aavso/out.mp4: src.screencast.py.aavso screencasts/aavso.yml screencasts/aavso/intro.mov screencasts/aavso/end.mov screencasts/aavso/sab.mov screencasts/aavso/tm.mp4 screencasts/aavso/jb.mp4 screencasts/aavso/elle.mp4 src/screencast.py
