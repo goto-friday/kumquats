@@ -1,0 +1,17 @@
+Packages
+========
+
+The following packages are required:
+
+python3, pip, ffmpeg, ninja, texlive, graphviz, git
+matplotlib, astropy, astroquery, lightkurve, PyYAML
+
+
+Git
+===
+
+A hook is provided to ensure that Ninja has been rerun before committing,
+so that everything in the main branch is guaranteed to be up to date.
+
+cp lib/git.hooks.pre-commit .git/hooks/pre-commit
+chmod 0755 .git/hooks/pre-commit
