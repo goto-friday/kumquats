@@ -3,9 +3,7 @@
 import csv
 import json
 import itertools as it
-
 import yaml
-import matplotlib.pyplot as plt
 
 c = yaml.load(open("dat/config.yml"), Loader=yaml.Loader)
 known = json.load(open("dat/known.json"))
@@ -23,14 +21,12 @@ phases_v = [x[0] for x in dat_v]
 mags_g = [x[1] for x in dat_g]
 mags_v = [x[1] for x in dat_v]
 
-fig, ax = plt.subplots()
-ax.invert_yaxis()
-ax.set_xlabel("Phase")
-ax.set_ylabel("Magnitude")
-ax.scatter(phases_g, mags_g, s=6, marker='_', label='G Filter')
-ax.scatter(phases_v, mags_v, s=6, marker='|', label='V Filter')
+buf = "phase,mag\n"
+for r in dat_g:
+    buf += f"{r[0]},{r[1]}\n"
+open("dat/asassn_g.csv", 'w').write(buf)
 
-# TODO move some of this into matplotlibrc?
-ax.legend(loc='upper right', ncols=3, bbox_to_anchor=(1, 1, 0, .09),
-    borderaxespad=0, fontsize=10)
-fig.savefig("img/lightcurves/asassn.png")
+buf = "phase,mag\n"
+for r in dat_v:
+    buf += f"{r[0]},{r[1]}\n"
+open("dat/asassn_v.csv", 'w').write(buf)

@@ -40,22 +40,26 @@ b.add(["src/color_index.py"],
 b.add(["src/lightcurves.py"],
     inputs =  ['matplotlibrc'] +
         ['dat/config.yml'] +
+        ['dat/tess.csv'] +
         cat('dat/', ['known', 'period'], '.json') +
-        cat('dat/', config['filters'], '.csv'),
-    outputs = ['img/lightcurves/all.png'] +
+        cat('dat/', config['filters'], '.csv') +
+        cat('dat/asassn_', ['g', 'v'], '.csv'),
+    outputs = \
+        cat('img/lightcurves/', ['all', 'tess', 'asassn', 'asassn_tess'], '.png') +
         cat('img/lightcurves/', config['filters'], '.png'))
 
 b.add(["src/tess.py"],
-    inputs = ['matplotlibrc'] +
-        ['dat/config.yml'] +
+    inputs = ['dat/config.yml'] +
         cat('dat/', ['known', 'period'], '.json'),
-    outputs = ['img/lightcurves/tess.png'])
+    outputs = ['dat/tess.csv'],
+    # appears to be opened (unnecessarily) by lightkurve
+    ignored_inputs = ['matplotlibrc'])
 
 b.add(["src/asassn.py"],
-    inputs = ['matplotlibrc'] +
+    inputs = \
         cat('dat/', ['config.yml', 'asassn.csv']) +
         cat('dat/', ['known', 'period'], '.json'),
-    outputs = ['img/lightcurves/asassn.png'])
+    outputs = cat('dat/asassn_', ['g', 'v'], '.csv'))
 
 #b.add(["src/screencast.py", "main"],
 #    inputs = ['screencasts/main.yml'] + cat('screencasts/main/',

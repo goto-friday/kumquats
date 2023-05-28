@@ -13,3 +13,4 @@ Experiment with larger font sizes in plots
 Figure out what the extra calculations in Dr. Janzen's ASASSN notebook are doing, since my code doesn't have them
 FIXME: the js doesn't work in GH's "raw" view of dag.svg
 I'm realizing that wanting several variations of plots for the slides/poster is inevitable. however there will be some shared images, so maybe have img/*.png for shared, and img/poster/*.png, img/slides/*.png, img/paper/*.png?
+Call tess.py less often

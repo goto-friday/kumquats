@@ -3,7 +3,7 @@ Packages
 
 The following packages are required:
 
-python3, pip, ffmpeg, ninja, texlive, graphviz, git
+python3, pip, ninja, graphviz, git, strace
 matplotlib, astropy, astroquery, lightkurve, PyYAML
 
 

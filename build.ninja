@@ -46,18 +46,18 @@ rule src.lightcurves.py
     '' '' $
     src/lightcurves.py
   pool = console
-build img/lightcurves/all.png img/lightcurves/B.png img/lightcurves/V.png img/lightcurves/SG.png img/lightcurves/SR.png img/lightcurves/SI.png: src.lightcurves.py matplotlibrc dat/config.yml dat/known.json dat/period.json dat/B.csv dat/V.csv dat/SG.csv dat/SR.csv dat/SI.csv src/lightcurves.py
+build img/lightcurves/all.png img/lightcurves/tess.png img/lightcurves/asassn.png img/lightcurves/asassn_tess.png img/lightcurves/B.png img/lightcurves/V.png img/lightcurves/SG.png img/lightcurves/SR.png img/lightcurves/SI.png: src.lightcurves.py matplotlibrc dat/config.yml dat/tess.csv dat/known.json dat/period.json dat/B.csv dat/V.csv dat/SG.csv dat/SR.csv dat/SI.csv dat/asassn_g.csv dat/asassn_v.csv src/lightcurves.py
 
 rule src.tess.py
   command = lib/chk.py "$in" "$out" $
-    '' '' $
+    'matplotlibrc' '' $
     src/tess.py
   pool = console
-build img/lightcurves/tess.png: src.tess.py matplotlibrc dat/config.yml dat/known.json dat/period.json src/tess.py
+build dat/tess.csv: src.tess.py dat/config.yml dat/known.json dat/period.json src/tess.py
 
 rule src.asassn.py
   command = lib/chk.py "$in" "$out" $
     '' '' $
     src/asassn.py
   pool = console
-build img/lightcurves/asassn.png: src.asassn.py matplotlibrc dat/config.yml dat/asassn.csv dat/known.json dat/period.json src/asassn.py
+build dat/asassn_g.csv dat/asassn_v.csv: src.asassn.py dat/config.yml dat/asassn.csv dat/known.json dat/period.json src/asassn.py

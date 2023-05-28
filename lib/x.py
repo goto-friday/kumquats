@@ -2,6 +2,18 @@ import re
 import itertools as it
 import textwrap as tw
 
+#import matplotlib.pyplot as plt
+#
+#def make_plot(xlabel=None, ylabel=None, invert_yaxis=False):
+#    fig, ax = plt.subplots()
+#    if invert_yaxis:
+#        ax.invert_yaxis()
+#    if xlabel:
+#        ax.set_xlabel(xlabel)
+#    if ylabel:
+#        ax.set_ylabel(ylabel)
+#    return fig, ax
+
 # cat('A', ['B', 'C'], 'D') == ['ABD', 'ACD']
 def cat(*args):
     args = [a if isinstance(a, list) else [a] for a in args]
