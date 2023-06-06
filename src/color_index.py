@@ -48,37 +48,40 @@ d = bin(pts)
 min_pts = min([d[c]['npts'] for c in d])
 max_pts = max([d[c]['npts'] for c in d])
 
-fig, axs = plt.subplots(1, 2, sharey=True)
-fig.set_figwidth(fig.get_figheight()*2.5)
-axs[0].set_xlabel("Phase")
-axs[0].set_ylabel("Color Index")
-axs[1].set_xlabel("Eclipse")
+#fig, axs = plt.subplots(1, 2, sharey=True)
+#fig.set_figwidth(fig.get_figheight()*2.5)
+#axs[0].set_xlabel("Phase")
+#axs[0].set_ylabel("Color Index")
+#axs[1].set_xlabel("Eclipse")
+
+fig, ax = plt.subplots(layout='constrained')
+ax.set_xlabel("Phase")
+ax.set_ylabel("Color Index")
 markers = ['^', 'o', 2, 's', 3, 'd', 'v']
 
 for i, comb in enumerate(d):
     phases = [x['phase'] for x in d[comb]['pts']]
     indices = [x['cidx'] for x in d[comb]['pts']]
     weight = (3*(d[comb]['npts']-min_pts))/(max_pts-min_pts) + 0.5
-    axs[0].plot(phases, indices, label=comb, linewidth=weight,
+    ax.plot(phases, indices, label=comb, linewidth=weight,
         marker=markers[i], markersize=max(3, weight*3))
 
-# TODO handle ranges of no eclipse
-# TODO mirror
-pts = {}
-for ec in c['eclipses']:
-    pts[ec] = {}
-    for nec in c['eclipses'][ec]:
-        for filt in dat:
-            if filt not in pts[ec]:
-                pts[ec][filt] = []
-            pts[ec][filt] += [p['mag'] for p in dat[filt]
-                if nec['start'] <= p['phase'] < nec['end']]
+## TODO handle ranges of no eclipse
+## TODO mirror
+#pts = {}
+#for ec in c['eclipses']:
+#    pts[ec] = {}
+#    for nec in c['eclipses'][ec]:
+#        for filt in dat:
+#            if filt not in pts[ec]:
+#                pts[ec][filt] = []
+#            pts[ec][filt] += [p['mag'] for p in dat[filt]
+#                if nec['start'] <= p['phase'] < nec['end']]
 
-for i, comb in enumerate(d):
-    phases = [x['phase'] for x in d[comb]['pts']]
-    indices = [x['cidx'] for x in d[comb]['pts']]
-    axs[1].plot(phases, indices, label=comb, marker=markers[i])
+#for i, comb in enumerate(d):
+#    phases = [x['phase'] for x in d[comb]['pts']]
+#    indices = [x['cidx'] for x in d[comb]['pts']]
+#    axs[1].plot(phases, indices, label=comb, marker=markers[i])
 
-axs[1].legend(fontsize=10, loc='upper right', ncols=4,
-    bbox_to_anchor=(1, 1, 0, .14), borderaxespad=0)
+fig.legend(loc='outside lower right', ncols=4)
 fig.savefig("img/color_index.png", bbox_inches='tight')
