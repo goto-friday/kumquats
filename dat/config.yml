@@ -4,8 +4,6 @@ tess_pipeline: CDIPS
 # TODO decide these programmatically
 comp: Comp 98
 check: Comp 117
-# TODO generate this from somewhere
-period: 1.715779
 # TODO determine these programmatically
 eclipses:
   primary:

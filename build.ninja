@@ -34,12 +34,12 @@ rule src.period.py
   pool = console
 build dat/period.json img/period/asassn.png: src.period.py matplotlibrc dat/config.yml dat/known.json dat/asassn.csv src/period.py
 
-rule src.color_index.py
+rule src.color.py
   command = lib/chk.py "$in" "$out" $
     '' '' $
-    src/color_index.py
+    src/color.py
   pool = console
-build img/color_index.png: src.color_index.py matplotlibrc dat/config.yml dat/known.json dat/B.csv dat/V.csv dat/SG.csv dat/SR.csv dat/SI.csv src/color_index.py
+build img/color_index.png: src.color.py matplotlibrc dat/config.yml dat/B.csv dat/V.csv dat/SG.csv dat/SR.csv dat/SI.csv src/color.py
 
 rule src.lightcurves.py
   command = lib/chk.py "$in" "$out" $

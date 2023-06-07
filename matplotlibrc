@@ -1,5 +1,4 @@
 # XXX dpi?
-# XXX smaller bounding box?
 font.size: 12
 legend.fontsize: 10
 xtick.top: True
@@ -7,3 +6,4 @@ ytick.right: True
 xtick.direction: in
 ytick.direction: in
 lines.markersize: 5
+figure.constrained_layout.use: True

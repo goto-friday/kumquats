@@ -31,9 +31,9 @@ b.add(["src/period.py"],
         cat('dat/', ['config.yml', 'known.json', 'asassn.csv']),
     outputs = ['dat/period.json', 'img/period/asassn.png'])
 
-b.add(["src/color_index.py"],
+b.add(["src/color.py"],
     inputs = ['matplotlibrc'] +
-        cat('dat/', ['config.yml', 'known.json']) +
+        ['dat/config.yml'] +
         cat('dat/', config['filters'], '.csv'),
     outputs = ['img/color_index.png'])
 
