@@ -32,7 +32,7 @@ asassn_v = [dict(phase=float(r[0]), mag=float(r[1])) for r in asassn_v]
 asassn_v = sorted(asassn_v, key=lambda r: r['phase'])
 
 def new_plot():
-    fig, ax = plt.subplots(layout='constrained')
+    fig, ax = plt.subplots()
     ax.invert_yaxis()
     ax.set_xlabel("Phase")
     ax.set_ylabel("Magnitude")
