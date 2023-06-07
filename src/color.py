@@ -53,6 +53,7 @@ for i, combo in enumerate(d[states[0]].keys()):
     ax.plot([s[0].upper() + s[1:] for s in states],
         [d[s][combo]['c_idx'] for s in states],
         marker=markers[i], label=combo)
+ax.set_ylabel("Color index")
 ax.grid(axis='y')
 fig.legend(loc='outside lower right', ncols=4)
 fig.savefig("img/color_index.png")
